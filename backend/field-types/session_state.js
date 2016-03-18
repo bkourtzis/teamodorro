@@ -1,7 +1,7 @@
 var Sealious = require("sealious");
 var Promise = require("bluebird");
 
-var allowed_values = ["break", "running"];
+var allowed_values = ["break", "work"];
 
 var session_state = new Sealious.FieldType({
 	name: "session_state",

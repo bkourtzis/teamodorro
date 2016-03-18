@@ -15,21 +15,47 @@ Example.App = React.createClass({
 	mixins: [Router.State, Router.Navigation],
 	componentDidMount: function() {
 		var self = this;
-		self.getSession();
+		self.refresh();
 	},
 	getInitialState: function() {
 		return {
 			session: {}
 		};
 	},
-	getSession: function(){
-		Store.getSession()
+	refresh: function(){
+		var self = this;
+		var some_id;
+		var current_session = Helper.getAllSessions();
+
+		self.setState({
+			session: current_session
+		})
 	},
+	add: function(){
+		var new_date = new Date()
+
+		var data = {
+			"last_changed_timestamp" : new_date.getTime(),
+			"work_duration" : 25*60*1000,
+			"break_duration" : 5*60*1000,
+			"slug" : "sealcode",
+			"current_state" : "running"
+		}
+
+		Helper.addSession(data)
+	},
+	update: function(){
+		this.add()
+	},
+
+				// {this.props.children}
 	render: function() {
 		return (
 			<div className="app">
-				app component
-				{this.props.children}
+				<Example.Home session={this.state.session}/>
+				<button onClick={this.refresh}>Refresh</button>
+				<button onClick={this.add}>Add</button>
+				<button onClick={this.update}>Update</button>
 			</div>
 		)
 	}

@@ -9,26 +9,16 @@ var hashHistory = ReactRouter.hashHistory;
 // var browserHistory = ReactRouter.browserHistory;
 // <Router history={browserHistory}>
 
-ReactDOM.render(
-	<Router history={hashHistory}>
-		<Route path="/" component={Example.App}>
-			<IndexRoute component={Example.Home}/>
-			<Route path="some" component={Example.SomeView}/>
-			<Route path="second" component={Example.SecondView}/>
-		</Route>
-  	</Router>,
-document.getElementById('app')
-);
+// ReactDOM.render(
+// 	<Router history={hashHistory}>
+// 		<Route path="/" component={Example.App}>
+// 			<IndexRoute component={Example.Home}/>
+// 			<Route path="some" component={Example.SomeView}/>
+// 			<Route path="second" component={Example.SecondView}/>
+// 		</Route>
+//   	</Router>,
+// document.getElementById('app')
+// );
 
 
-// render((
-//   <Router history={browserHistory}>
-//     <Route path="/" component={App}>
-//       <Route path="about" component={About}/>
-//       <Route path="users" component={Users}>
-//         <Route path="/user/:userId" component={User}/>
-//       </Route>
-//       <Route path="*" component={NoMatch}/>
-//     </Route>
-//   </Router>
-// ), document.body)
+ReactDOM.render(<Example.App/>, document.getElementById('app'));

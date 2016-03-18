@@ -2,7 +2,7 @@ var Example = {};
 
 var React = require("react");
 var Router = require("react-router");
-var Store = require("../stores/store.js");
+// var Store = require("../stores/store.js");
 
 module.exports = Example;
 

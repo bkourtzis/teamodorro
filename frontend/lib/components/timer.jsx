@@ -3,7 +3,7 @@ var ReactCountdownClock = require('react-countdown-clock');
 
 var Timer = React.createClass({
 	getMode: function(){
-		var lct = this.props.session.body.last_change_timestamp;
+		var lct = this.props.session.body.last_changed_timestamp;
 		var at = new Date().getTime();
 		var general_state = this.props.session.body.current_state;
 		var target_duration;
@@ -12,6 +12,7 @@ var Timer = React.createClass({
 		}else{
 			target_duration = this.props.session.body.work_duration;
 		}
+		console.log(at, lct, target_duration);
 		if(at-lct>=target_duration){
 			return "after_" + general_state;
 		}else{
@@ -23,13 +24,21 @@ var Timer = React.createClass({
 	},
 	render: function() {
 		console.log(this.props.session)
-		return (
-			<div className="content">
-				<div className="timer">
-					{JSON.stringify(this.props.session)}
+		if (this.props.session.body) {
+			return (
+				<div className="content">
+					<div className="timer">
+
+						{JSON.stringify(this.props.session)}
+						{this.getMode()}
+					</div>
 				</div>
-			</div>
-		);
+			);			
+		} else {
+			return(
+				<div><span>loading</span></div>
+			)
+		}
 	}
 });
 

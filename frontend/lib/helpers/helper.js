@@ -28,7 +28,7 @@ var Helper = new function() {
 
 
     this.getSession = function(id) {
-    	var hardcode_id = "earbp548b8"
+    	var hardcode_id = "1ffyihxf1v"
     	var id = hardcode_id;
         return qwest.get(url + "/" + id)
             .then(function(xhr, response) {
@@ -39,14 +39,9 @@ var Helper = new function() {
     
     // add, update
     this.addSession = function(data, id) {
-        // if (id != null) url += "/" + id;
-
-        // return qwest.map(method, url, fd, {
-        // 	dataType: "formdata"
-        // })
         return qwest.post(url, data)
     	.then(function(xhr, response){
-    		console.log('session added')
+    		console.log('session added 	')
     	})
     	.catch(function(xhr, response){
     		console.log('error in addSession')

@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "go": "forever start --append -o sealious-log.txt -l forever-log.txt -e  error-log.txt index.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   "dependencies": {
     "bluebird": "^3.3.4",
     "event-emitter": "^0.3.4",
+    "forever": "^0.15.1",
     "qwest": "^4.2.1",
     "react": "^0.14.7",
     "react-countdown-clock": "^1.0.5",

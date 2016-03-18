@@ -17,8 +17,9 @@
   },
   "homepage": "https://github.com/kuba-orlik/teamodorro#readme",
   "dependencies": {
-    "sealious": "^0.6.24",
-    "sealious-channel-rest": "^0.1.7",
-    "sealious-www-server": "^0.6.2"
+    "sealious": "github:sealious/sealious#references",
+    "sealious-channel-rest": "github:sealious/sealious-channel-rest#subjects",
+    "sealious-datastore-mongo": "github:sealious/sealious-datastore-mongo#alpha",
+    "sealious-www-server": "github:sealious/sealious-www-server#references"
   }
 }

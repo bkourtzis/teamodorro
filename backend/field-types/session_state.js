@@ -1,4 +1,5 @@
 var Sealious = require("sealious");
+var Promise = require("bluebird");
 
 var allowed_values = ["break", "running"];
 

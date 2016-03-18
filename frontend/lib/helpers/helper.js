@@ -21,7 +21,7 @@ var Helper = new function() {
 	this.getAllSessions = function() {
 		return qwest.get(url)
 			.then(function(xhr, response) {
-				console.log('getAllSessions')
+				// console.log('getAllSessions')
 				return response;
 			});
 	}
@@ -32,7 +32,7 @@ var Helper = new function() {
 		var id = hardcode_id;
 		return qwest.get(url + "/" + id)
 			.then(function(xhr, response) {
-				console.log('getSession')
+				// console.log('getSession')
 				return response;
 			})
 	}
@@ -41,26 +41,26 @@ var Helper = new function() {
 	this.addSession = function(data, id) {
 		return qwest.post(url, data)
 			.then(function(xhr, response) {
-				console.log('session added 	')
+				// console.log('session added 	')
 			})
 			.catch(function(xhr, response) {
-				console.log('error in addSession')
+				// console.log('error in addSession')
 			})
 	}
 
-	// this.updateSession = function(data,id){
-	// 	return this.addSession(data, id);
-	// }
+	this.updateSession = function(id, new_state) {
+		var resource = url + '/' + id;
 
-
-	this.updateSession = function(data, id) {
+		var data = {};
+		data.last_changed_timestamp = this.generateCurrentTimestamp();
+		data.current_state = new_state;
 		
-		return qwest['patch'](url, data)
+		return qwest.map('PATCH', resource, data)
 			.then(function(xhr, response) {
-				
+				console.log('updateSession')
 			})
 			.catch(function(e, xhr, response) {
-				// Process the error
+				console.log('error with updateSession')
 			});
 	}
 

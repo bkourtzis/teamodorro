@@ -40,10 +40,10 @@ var Timer = React.createClass({
 		console.log(this.props.session)
 		try{
 			if (this.props.session.body) {
+							// {JSON.stringify(this.props.session)}
 				return (
 					<div className="content">
 						<div className="timer">
-							{JSON.stringify(this.props.session)}
 							{this.getMode()}
 							{this.getTimeLeft()}
 							

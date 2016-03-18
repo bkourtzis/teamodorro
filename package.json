@@ -1,0 +1,24 @@
+{
+  "name": "teamodorro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kuba-orlik/teamodorro.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kuba-orlik/teamodorro/issues"
+  },
+  "homepage": "https://github.com/kuba-orlik/teamodorro#readme",
+  "dependencies": {
+    "sealious": "^0.6.24",
+    "sealious-channel-rest": "^0.1.7",
+    "sealious-www-server": "^0.6.2"
+  }
+}

@@ -18,6 +18,9 @@ Example.App = React.createClass({
 	componentDidMount: function() {
 		var self = this;
 		self.refresh();
+		setInterval(function(){
+			self.refresh();
+		}, 1000)
 	},
 	getInitialState: function() {
 		return {

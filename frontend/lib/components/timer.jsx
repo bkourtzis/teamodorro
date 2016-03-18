@@ -3,6 +3,8 @@ var ReactCountdownClock = require('react-countdown-clock');
 
 var Timer = React.createClass({
 	getTargetDuration: function(){
+		var general_state = this.props.session.body.current_state;
+
 		if(general_state === "break"){
 			return this.props.session.body.break_duration;
 		}else{
@@ -30,27 +32,31 @@ var Timer = React.createClass({
 			var target_duration = this.getTargetDuration();
 			return Math.floor((target_duration - (at - lct))/1000);
 		}
-	}
+	},
 	callback: function(){
 		console.log('end')
 	},
 	render: function() {
 		console.log(this.props.session)
-		if (this.props.session.body) {
-			return (
-				<div className="content">
-					<div className="timer">
-
-						{JSON.stringify(this.props.session)}
-						{this.getMode()}
-						{this.getTimeLeft()}
+		try{
+			if (this.props.session.body) {
+				return (
+					<div className="content">
+						<div className="timer">
+							{JSON.stringify(this.props.session)}
+							{this.getMode()}
+							{this.getTimeLeft()}
+							
+						</div>
 					</div>
-				</div>
-			);			
-		} else {
-			return(
-				<div><span>loading</span></div>
-			)
+				);			
+			} else {
+				return(
+					<div><span>loading</span></div>
+				)
+			}
+		} catch(e){
+			console.log(e)
 		}
 	}
 });

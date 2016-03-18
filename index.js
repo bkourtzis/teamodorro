@@ -7,7 +7,8 @@ Sealious.ConfigManager.set_config(
 	{
 		connections: [
 		{
-			port: 8080
+			port: 8081,
+			routes: { cors: true }
 		}
 		]
 	}

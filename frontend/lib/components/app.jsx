@@ -2,7 +2,7 @@ var Example = {};
 
 var React = require("react");
 var Router = require("react-router");
-// var Store = require("../stores/store.js");
+var Helper = require("../helpers/helper.js");
 
 module.exports = Example;
 
@@ -13,6 +13,18 @@ Example.Home = require('./home.jsx');
 Example.App = React.createClass({
 				// <Router.RouteHandler/> → {this.props.children}
 	mixins: [Router.State, Router.Navigation],
+	componentDidMount: function() {
+		var self = this;
+		self.getSession();
+	},
+	getInitialState: function() {
+		return {
+			session: {}
+		};
+	},
+	getSession: function(){
+		Store.getSession()
+	},
 	render: function() {
 		return (
 			<div className="app">

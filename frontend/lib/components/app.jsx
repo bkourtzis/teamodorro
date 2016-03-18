@@ -2,7 +2,7 @@ var Example = {};
 
 var React = require("react");
 var Router = require("react-router");
-var Store = require("../stores/store.js");
+var Helper = require("../helpers/helper.js");
 
 module.exports = Example;
 
@@ -19,11 +19,11 @@ Example.App = React.createClass({
 	},
 	getInitialState: function() {
 		return {
-			session: 
+			session: {}
 		};
 	},
 	getSession: function(){
-		
+		Store.getSession()
 	},
 	render: function() {
 		return (

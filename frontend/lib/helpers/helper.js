@@ -1,7 +1,7 @@
 var qwest = require('qwest');
 var EventEmitter = require('event-emitter');
 
-var Store = new function() {
+var Helper = new function() {
 
 	var ee = new EventEmitter();
 	this.on = ee.on.bind(ee);
@@ -24,4 +24,4 @@ var Store = new function() {
 
 };
 
-module.exports = Store;
+module.exports = Helper;

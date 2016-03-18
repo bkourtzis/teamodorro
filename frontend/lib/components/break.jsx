@@ -4,6 +4,7 @@ var Break = React.createClass({
 		return (
 			<div className="Break">
 				Break
+				time: {this.props.time}
 			</div>
 		);
 	}

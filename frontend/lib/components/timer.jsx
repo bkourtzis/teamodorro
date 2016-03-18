@@ -65,16 +65,17 @@ var Timer = React.createClass({
 	render: function() {
 		console.log(this.props.session)
 
+						// <div className="testing">
+						// 	<span>mode from timer.jsx {this.getMode()}</span>
+						// 	<br />
+						// 	<span>time from timer.jsx {this.getTimeLeft()}</span>
+						// </div>
+						
 		try{
 			if (this.props.session.body) {
 							// {JSON.stringify(this.props.session)}
 				return (
 					<div className="content">
-						<div className="testing">
-							<span>mode from timer.jsx {this.getMode()}</span>
-							<br />
-							<span>time from timer.jsx {this.getTimeLeft()}</span>
-						</div>
 						<div className="timer">
 							<span>Timer</span>
 							{this.showCurrentView()}

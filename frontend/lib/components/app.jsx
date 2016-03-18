@@ -53,15 +53,6 @@ Example.App = React.createClass({
 
 		Helper.addSession(data)
 	},
-	to_break: function(){
-		Helper.updateSession('1ffyihxf1v', 'break');
-		
-	},
-
-	to_work: function(){
-		Helper.updateSession('1ffyihxf1v', 'work');
-	},
-
 				// {this.props.children}
 	render: function() {
 		return (
@@ -69,8 +60,6 @@ Example.App = React.createClass({
 				<Example.Timer session={this.state.session}/>
 				<button onClick={this.refresh}>Refresh</button>
 				<button onClick={this.add}>Add</button>
-				<button onClick={this.to_work}>Change timestamp, go to work</button>
-				<button onClick={this.to_break}>Change timestamp, go to break</button>
 			</div>
 		)
 	}

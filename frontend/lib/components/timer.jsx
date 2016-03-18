@@ -12,13 +12,22 @@ var Timer = React.createClass({
 		}else{
 			target_duration = this.props.session.body.work_duration;
 		}
-		console.log(at, lct, target_duration);
 		if(at-lct>=target_duration){
 			return "after_" + general_state;
 		}else{
 			return general_state;
 		}
 	},
+	getTimeLeft: function(){
+		var current_mode = this.getMode();
+		if(current_mode.split("_")[0]==="after"){
+			return 0;
+		}else{
+			var lct = this.props.session.body.last_changed_timestamp
+			var at = new Date().getTime();
+			return Math.floor((at - lct)/1000);
+		}
+	}
 	callback: function(){
 		console.log('end')
 	},
@@ -31,6 +40,7 @@ var Timer = React.createClass({
 
 						{JSON.stringify(this.props.session)}
 						{this.getMode()}
+						{this.getTimeLeft()}
 					</div>
 				</div>
 			);			

@@ -1,4 +1,5 @@
 var Sealious = require("sealious");
+var path = require('path')
 
 Sealious.ConfigManager.set_config("datastore_chip_name", "mongo")
 
@@ -17,7 +18,7 @@ Sealious.init();
 
 
 var www_server = Sealious.ChipManager.get_chip("channel", "www_server");
-www_server.static_route(path.resolve(module.filename, "../front/public"), "");
+www_server.static_route(path.resolve(module.filename, "../frontend/public"), "");
 
 require("./backend/field-types/session_state.js");
 require("./backend/resource-types/session.js");

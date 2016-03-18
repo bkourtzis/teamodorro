@@ -6,6 +6,9 @@ var Helper = new function() {
     var ee = new EventEmitter();
     this.on = ee.on.bind(ee);
 
+    // var url = 'http://vps202941.ovh.net:8081/api/v1/resources/session';
+    var url = 'http://arkadiusz-ThinkPad-T450s:8081/api/v1/resources/session';
+
     this.request = function(method, url, data) {
         return qwest.map(method, url, data)
             .then(function(xhr, response) {
@@ -16,30 +19,32 @@ var Helper = new function() {
     };
 
     this.getAllSessions = function() {
-        return qwest.get('http://vps202941.ovh.net:8080/api/v1/resources/session')
+        return qwest.get(url)
             .then(function(xhr, response) {
+            	console.log('getAllSessions')
                 return response;
             });
     }
 
+
     this.getSession = function(id) {
-        return qwest.get('http://vps202941.ovh.net:8080/api/v1/resources/session/' + id)
+    	var hardcode_id = "earbp548b8"
+    	var id = hardcode_id;
+        return qwest.get(url + "/" + id)
             .then(function(xhr, response) {
+            	console.log('getSession')
                 return response;
             })
     }
     
     // add, update
     this.addSession = function(data, id) {
-        var fd = new FormData();
-        var url = 'http://vps202941.ovh.net:8080/api/v1/resources/session/';
-        if (id != null) url += "/" + id;
+        // if (id != null) url += "/" + id;
 
-        for (var key in session) fd.append(key, session[key]);
-
-        return qwest.map(method, url, fd, {
-        	dataType: "formdata"
-        })
+        // return qwest.map(method, url, fd, {
+        // 	dataType: "formdata"
+        // })
+        return qwest.post(url, data)
     	.then(function(xhr, response){
     		console.log('session added')
     	})
@@ -48,7 +53,7 @@ var Helper = new function() {
     	})
     }
 
-    this.updateSession = function(data, id){
+    this.updateSession = function(data,id){
     	return this.addSession(data, id);
     }
 };

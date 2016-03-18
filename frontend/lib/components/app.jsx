@@ -6,9 +6,11 @@ var Helper = require("../helpers/helper.js");
 
 module.exports = Example;
 
-Example.SomeView = require('./some-view.jsx');
-Example.SecondView = require('./second-view.jsx');
-Example.Home = require('./home.jsx');
+Example.Work = require('./work.jsx');
+Example.AfterWork = require('./after-work.jsx');
+Example.Break = require('./break.jsx');
+Example.AfterBreak = require('./after-break.jsx');
+Example.Timer = require('./timer.jsx');
 
 Example.App = React.createClass({
 				// <Router.RouteHandler/> → {this.props.children}
@@ -25,11 +27,15 @@ Example.App = React.createClass({
 	refresh: function(){
 		var self = this;
 		var some_id;
-		var current_session = Helper.getAllSessions();
+		Helper.getSession()
+		.then(function(current_session){
+				self.setState({
+					session: current_session
+				})
+			}
+		)
+		console.log('save state')
 
-		self.setState({
-			session: current_session
-		})
 	},
 	add: function(){
 		var new_date = new Date()
@@ -52,7 +58,7 @@ Example.App = React.createClass({
 	render: function() {
 		return (
 			<div className="app">
-				<Example.Home session={this.state.session}/>
+				<Example.Timer session={this.state.session}/>
 				<button onClick={this.refresh}>Refresh</button>
 				<button onClick={this.add}>Add</button>
 				<button onClick={this.update}>Update</button>

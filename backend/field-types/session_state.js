@@ -9,7 +9,7 @@ var session_state = new Sealious.FieldType({
 		if(allowed_values.indexOf(value_in_code) === -1){
 			reject(`Only these values are accepted: ${allowed_values.map((e)=>'"'+e+'"').join(", ")}.`);
 		}else{
-			accpet();
+			accept();
 		}
 	}
 })

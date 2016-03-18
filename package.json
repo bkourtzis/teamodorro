@@ -17,9 +17,20 @@
   },
   "homepage": "https://github.com/kuba-orlik/teamodorro#readme",
   "dependencies": {
+    "bluebird": "^3.3.4",
+    "event-emitter": "^0.3.4",
+    "qwest": "^4.2.1",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "react-router": "^2.0.1",
     "sealious": "github:sealious/sealious#references",
     "sealious-channel-rest": "github:sealious/sealious-channel-rest#subjects",
     "sealious-datastore-mongo": "github:sealious/sealious-datastore-mongo#alpha",
     "sealious-www-server": "github:sealious/sealious-www-server#references"
+  },
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "reactify": "^1.1.1",
+    "watchify": "^3.7.0"
   }
 }

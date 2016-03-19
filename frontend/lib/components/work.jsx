@@ -9,7 +9,12 @@ var Work = React.createClass({
 						{this.props.time}
 					</div>
 				</div>
-				<div className="flex-item sentence">Focus on your task!</div>
+				<div className="flex-item sentence">
+					<span>Focus on your task!</span>
+					<div className="slug">
+						{'teamodorro.io/'+this.props.slug}
+					</div>
+				</div>
 			</div>
 		);
 	}

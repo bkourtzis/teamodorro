@@ -42,19 +42,21 @@ var Timer = React.createClass({
 		var current_mode = this.getMode()
 		var current_time = this.getTimeLeft()
 		var current_view;
-		
+		console.log(this.props.session.body.slug)
+
+
 		switch(current_mode) {
 			case "break":
-				current_view = <Example.Break time={current_time}/>
+				current_view = <Example.Break time={current_time} slug={this.props.session.body.slug}/>
 				break;
 			case "work":
-				current_view = <Example.Work time={current_time}/>
+				current_view = <Example.Work time={current_time} slug={this.props.session.body.slug}/>
 				break;
 			case "after_break":
-				current_view = <Example.AfterBreak time={current_time}/>
+				current_view = <Example.AfterBreak time={current_time} slug={this.props.session.body.slug}/>
 				break;
 			case "after_work":
-				current_view = <Example.AfterWork time={current_time}/>
+				current_view = <Example.AfterWork time={current_time} slug={this.props.session.body.slug}/>
 				break;
 			default:
 				current_view = <div />;
@@ -63,17 +65,10 @@ var Timer = React.createClass({
 	},
 
 	render: function() {
-		console.log(this.props.session)
+		// console.log(this.props.session)
 
-						// <div className="testing">
-						// 	<span>mode from timer.jsx {this.getMode()}</span>
-						// 	<br />
-						// 	<span>time from timer.jsx {this.getTimeLeft()}</span>
-						// </div>
-						
 		try{
 			if (this.props.session.body) {
-							// {JSON.stringify(this.props.session)}
 				return (
 					<div className="flex-container">
 						<div className="row">
@@ -106,10 +101,3 @@ var Timer = React.createClass({
 });
 
 module.exports = Timer;
-// 				<ReactCountdownClock 
-// 					seconds={60}
-// 					color="#ddd"
-// 					alpha={0.9}
-// 					size={300}
-// 					onComplete={this.callback} />
-

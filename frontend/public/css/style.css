@@ -74,6 +74,10 @@ body {
     font-size: 2rem;
 }
 
+.slug{
+    color: hsl(0, 10%, 45%);
+}
+
 .flex-container {
     height: 100%;
     padding: 0;
@@ -194,10 +198,10 @@ body {
 .button {
     transition: all 400ms;
     width: 100%;
-    background-color: #4CE575;
+    background-color: #312828;
     border: none;
     padding: 1rem;
-    color: #FFF;
+    color: rgb(184, 183, 173);
     font-weight: bold;
     font-size: 1.25rem;
     text-align: center;
@@ -212,13 +216,9 @@ body {
 }
 
 .button:hover {
-    background: #40CB90;
-    box-shadow: 6px 6px 0px #30b27b inset, -6px -6px 0px #30b27b inset;
-    -moz-box-shadow: 6px 6px 0px #30b27b inset, -6px -6px 0px #30b27b inset;
-    -webkit-box-shadow: 6px 6px 0px #30b27b inset, -6px -6px 0px #30b27b inset;
-    transition: all 200ms;
+    transition: all 400ms;
+    background: hsl(54, 7%, 30%);
 }
-
 button{
     cursor: pointer;
 }

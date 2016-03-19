@@ -40,7 +40,7 @@ var Settings = React.createClass({
 					value={durations.break_duration}
 					ref="break_input"/>
 
-				<button className="button" onClick={this.saveDurations}>Save</button>
+				<button className="button" onClick={this.saveDurations}>save</button>
 			</Menu>
 		);
 	}

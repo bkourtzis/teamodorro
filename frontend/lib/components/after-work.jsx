@@ -14,7 +14,12 @@ var AfterWork = React.createClass({
 						break!
 					</div>
 				</div>
-				<div className="flex-item sentence">What now?</div>
+				<div className="flex-item sentence">
+					<span>What now?</span>
+					<div className="slug">
+							{'teamodorro.io/'+this.props.slug}
+						</div>
+				</div>
 			</div>
 		);
 	}

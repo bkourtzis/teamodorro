@@ -14,7 +14,14 @@ var AfterBreak = React.createClass({
 						work!
 					</div>
 				</div>
-				<div className="flex-item sentence">Ready to work?</div>
+				<div className="flex-item sentence">
+					<span>Ready to work?</span>
+					<div className="slug">
+						{'teamodorro.io/'+this.props.slug}
+					</div>
+				</div>
+
+
 			</div>
 		);
 	}

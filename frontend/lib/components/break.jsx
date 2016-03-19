@@ -8,7 +8,12 @@ var Break = React.createClass({
 						{this.props.time}
 					</div>
 				</div>
-				<div className="flex-item sentence">Just relax...</div>
+				<div className="flex-item sentence">
+					<span>Just relax...</span>
+					<div className="slug">
+						{'teamodorro.io/'+this.props.slug}
+					</div>
+				</div>
 			</div>
 		);
 	}

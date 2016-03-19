@@ -113,6 +113,9 @@ var Timer = React.createClass({
 									Teamodorro
 								</div>
 							</div>
+							<div className="flex-item sentence no-padding">
+								<span className="animated bounceInDown information">loading...</span>
+							</div>
 						</div>
 					</div>
 				)

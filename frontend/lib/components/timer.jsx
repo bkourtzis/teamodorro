@@ -71,6 +71,7 @@ var Timer = React.createClass({
 	},
 
 	render: function() {
+		
 		try{
 			if (this.props.session.body) {
 				return (

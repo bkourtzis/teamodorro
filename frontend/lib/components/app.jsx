@@ -12,9 +12,10 @@ Example.Break = require('./break.jsx');
 Example.AfterBreak = require('./after-break.jsx');
 Example.Timer = require('./timer.jsx');
 Example.Menu = require('./menu.jsx');
+Example.Container = require('./container.jsx');
+Example.NewSession = require('./new-session.jsx');
 
-Example.App = React.createClass({
-				// <Router.RouteHandler/> → {this.props.children}
+Example.TimerContainer = React.createClass({
 	mixins: [Router.State, Router.Navigation],
 	componentDidMount: function() {
 		var self = this;
@@ -40,7 +41,7 @@ Example.App = React.createClass({
 	refresh: function(){
 		var self = this;
 		var some_id;
-		Helper.getSession()
+		Helper.getSessionByName(this.props.params.slug)
 		.then(function(current_session){
 				self.setState({
 					session: current_session
@@ -48,27 +49,17 @@ Example.App = React.createClass({
 			}
 		)
 	},
-	add: function(){
-		var new_date = new Date()
-
-		var data = {
-			"last_changed_timestamp" : new_date.getTime(),
-			"work_duration" : 25*60*1000,
-			"break_duration" : 5*60*1000,
-			"slug" : "sealcode",
-			"current_state" : "work"
-		}
-
-		Helper.addSession(data)
-	},
 	render: function() {
+		console.log(this.props.params.slug)
+
 		return (
 			<div>
+
 				<Example.Menu 
 					changeAttributeValue={this.changeAttributeValue}
 					work_duration={this.state.work_duration}
 					break_duration={this.state.break_duration}/>
-				<Example.Timer session={this.state.session}/>
+				<Example.Timer session={this.state.session} />
 			</div>
 		)
 	}

@@ -37,6 +37,15 @@ var Helper = new function() {
 			})
 	}
 
+	this.getSessionByName = function(slug) {
+		return qwest.get(url, {filter: {slug: slug}})
+			.then(function(xhr, response) {
+				console.log('getSession')
+				return response;
+			})
+	}
+
+
 	// add, update
 	this.addSession = function(data, id) {
 		return qwest.post(url, data)

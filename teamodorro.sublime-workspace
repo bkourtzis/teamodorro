@@ -1,0 +1,1270 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fo",
+				"for	for (…) {…} (Improved Native For-Loop)"
+			],
+			[
+				"para",
+				"parameters"
+			],
+			[
+				"par",
+				"parameters"
+			],
+			[
+				"tag",
+				"tagname"
+			],
+			[
+				"default_decision_",
+				"default_decision_tag_content"
+			],
+			[
+				"default_decision_ta",
+				"default_decision_attributes"
+			],
+			[
+				"o",
+				"onopentag"
+			],
+			[
+				"tags",
+				"tags_stack"
+			],
+			[
+				"ke",
+				"keep_content"
+			],
+			[
+				"default_decision_tag",
+				"default_decision_tag_content"
+			],
+			[
+				"mer",
+				"merged_params"
+			],
+			[
+				"deco",
+				"decoded_value"
+			],
+			[
+				"de",
+				"default_decision"
+			],
+			[
+				"d",
+				"default_decision"
+			],
+			[
+				"sa",
+				"sanitized"
+			],
+			[
+				"at",
+				"attributes"
+			],
+			[
+				"att",
+				"attributes"
+			],
+			[
+				"a",
+				"attributes"
+			],
+			[
+				"che",
+				"check_fragment"
+			],
+			[
+				"dec",
+				"decision"
+			],
+			[
+				"san",
+				"sanitized"
+			],
+			[
+				"tags_",
+				"tags_keep"
+			],
+			[
+				"atr",
+				"attributes"
+			],
+			[
+				"on",
+				"ontext"
+			],
+			[
+				"for",
+				"fori	JS - For In loop"
+			],
+			[
+				"param",
+				"params"
+			],
+			[
+				"def",
+				"default_decisin"
+			],
+			[
+				"pars",
+				"parser2"
+			],
+			[
+				"op",
+				"onopentag"
+			],
+			[
+				"params",
+				"params_sets"
+			],
+			[
+				"ce",
+				"cleaned"
+			],
+			[
+				"hmtl",
+				"htmlparser"
+			],
+			[
+				"remo",
+				"removeAttrs"
+			],
+			[
+				"stri",
+				"stripAttributes"
+			],
+			[
+				"va",
+				"value_in_database"
+			],
+			[
+				"all",
+				"allowed"
+			],
+			[
+				"strip",
+				"stripAttributes"
+			],
+			[
+				"res",
+				"result"
+			],
+			[
+				"in",
+				"input_value"
+			],
+			[
+				"vale",
+				"values"
+			],
+			[
+				"me",
+				"method_name"
+			],
+			[
+				"ec",
+				"encoded_value"
+			],
+			[
+				"enc",
+				"encoded_value"
+			],
+			[
+				"fiel",
+				"field_type_html"
+			],
+			[
+				"nau",
+				"naugthy"
+			],
+			[
+				"fi",
+				"field_type_html"
+			],
+			[
+				"na",
+				"naugthyStrings"
+			],
+			[
+				"nag",
+				"naugthyStrings"
+			],
+			[
+				"str",
+				"string"
+			],
+			[
+				"des",
+				"describe"
+			],
+			[
+				"be",
+				"before"
+			],
+			[
+				"is",
+				"is_proper_value"
+			],
+			[
+				"new",
+				"new_value"
+			],
+			[
+				"val",
+				"value_in_database"
+			],
+			[
+				"ne",
+				"new_value"
+			],
+			[
+				"sani",
+				"sanitizeHtml"
+			],
+			[
+				"al",
+				"allowedTags"
+			],
+			[
+				"dea",
+				"default_params"
+			],
+			[
+				"char",
+				"chars_in_line"
+			],
+			[
+				"ma",
+				"malicious_html"
+			],
+			[
+				"st",
+				"stripped"
+			],
+			[
+				"cw",
+				"cwun	React: componentWillUnmount: fn() { ... }"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"En",
+				"EventEmitter"
+			],
+			[
+				"rea",
+				"readAndStoreEntries"
+			],
+			[
+				"re",
+				"req	require"
+			],
+			[
+				"get",
+				"getDOMNode"
+			],
+			[
+				"req",
+				"require"
+			],
+			[
+				"ge",
+				"geoData"
+			],
+			[
+				"Route",
+				"Router"
+			],
+			[
+				"Not",
+				"NotFoundRoute"
+			],
+			[
+				"Ro",
+				"Router"
+			],
+			[
+				"R",
+				"Redirect"
+			],
+			[
+				"Cu",
+				"CurrencyListElement"
+			],
+			[
+				"plac",
+				"place"
+			],
+			[
+				"pl",
+				"place"
+			],
+			[
+				"lon",
+				"longitude"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"cl",
+				"cl	console.log"
+			],
+			[
+				"tex",
+				"text-indent"
+			],
+			[
+				"pad",
+				"padding-left"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"desc",
+				"description"
+			],
+			[
+				"borde",
+				"border-bottom"
+			],
+			[
+				"bor",
+				"border-bottom"
+			],
+			[
+				"li",
+				"line-height"
+			],
+			[
+				"pla",
+				"place_detail"
+			],
+			[
+				"pa",
+				"padding-bottom"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"regi",
+				"registration"
+			],
+			[
+				"run",
+				"runSequence"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"regis",
+				"registration"
+			],
+			[
+				"sur",
+				"surname"
+			],
+			[
+				"su",
+				"surname_from_user"
+			],
+			[
+				"clas",
+				"class_number"
+			],
+			[
+				"cu",
+				"current_case"
+			],
+			[
+				"an",
+				"answer"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"cur",
+				"current_case"
+			],
+			[
+				"cla",
+				"class_number"
+			],
+			[
+				"co",
+				"correct_surname"
+			],
+			[
+				"owi",
+				"owicz"
+			],
+			[
+				"la",
+				"last_characters"
+			],
+			[
+				"s",
+				"surname"
+			],
+			[
+				"mi",
+				"miejscownik"
+			],
+			[
+				"ka",
+				"ka"
+			],
+			[
+				"sue",
+				"surname_from_user"
+			],
+			[
+				"class",
+				"class_number"
+			],
+			[
+				"test",
+				"test_properties"
+			],
+			[
+				"ch",
+				"checkSurname"
+			],
+			[
+				"cwu",
+				"cwu	React: componentWillUpdate: fn(np, ns) { ... }"
+			],
+			[
+				"tok",
+				"token_value"
+			],
+			[
+				"user",
+				"username"
+			],
+			[
+				"locate",
+				"locatePosition"
+			],
+			[
+				"Pl",
+				"Placetag"
+			],
+			[
+				"repl",
+				"replace"
+			],
+			[
+				"im",
+				"image"
+			],
+			[
+				"repla",
+				"replace('&','%26"
+			],
+			[
+				"en",
+				"encoded"
+			],
+			[
+				"sh",
+				"shareViaTwitter"
+			],
+			[
+				"shareVi",
+				"shareViaGmail"
+			],
+			[
+				"sho",
+				"showCategoryIcon"
+			],
+			[
+				"shwo",
+				"showImage"
+			],
+			[
+				"show",
+				"showImage"
+			],
+			[
+				"lat",
+				"latitude"
+			],
+			[
+				"confirm",
+				"confirmButtonText"
+			],
+			[
+				"mod",
+				"model"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Markdown Preview/Markdown.sublime-build",
+					""
+				],
+				[
+					"Packages/User/bash.sublime-build",
+					""
+				],
+				[
+					"Packages/User/mvn.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Markdown Preview/Markdown.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/User/bash.sublime-build",
+					""
+				],
+				[
+					"Packages/User/mvn.sublime-build",
+					""
+				],
+				[
+					"Packages/User/python3.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"last_filter": "remo",
+		"selected_items":
+		[
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"isntall ",
+				"Package Control: Install Package"
+			],
+			[
+				"scss",
+				"Set Syntax: CSS"
+			],
+			[
+				"set js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"INSTA",
+				"Package Control: Install Package"
+			],
+			[
+				"c",
+				"Set Syntax: C"
+			],
+			[
+				"markd",
+				"Set Syntax: Markdown"
+			],
+			[
+				"set sy mar",
+				"Set Syntax: Markdown Light"
+			],
+			[
+				"markdown",
+				"Build With: Markdown"
+			],
+			[
+				"ma",
+				"GitHub Flavored Markdown: Preview"
+			],
+			[
+				"JS",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"mar",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"che",
+				"Markdown Preview: Open Markdown Cheat sheet"
+			],
+			[
+				"set ma",
+				"Set Syntax: Markdown Light"
+			],
+			[
+				"set syntax mar",
+				"Set Syntax: MultiMarkdown"
+			],
+			[
+				"mark",
+				"Set Syntax: Markdown"
+			],
+			[
+				"preview",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"markdown pre",
+				"Markdown Preview: Open Markdown Cheat sheet"
+			],
+			[
+				"markdo",
+				"Set Syntax: MultiMarkdown"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"ste thml",
+				"Set Syntax: HTML"
+			],
+			[
+				"jtml",
+				"BracketHighlighter: Jump to Left Bracket"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"c++",
+				"Set Syntax: C++"
+			],
+			[
+				"java",
+				"Set Syntax: Java"
+			],
+			[
+				"loca",
+				"Snippet: JS - localStorage"
+			],
+			[
+				"bab",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"babe",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"jas",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"babel",
+				"Babel Transform"
+			],
+			[
+				"jav",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"rce",
+				"Snippet: reactClass"
+			],
+			[
+				"jsx",
+				"Set Syntax: JavaScript Next"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"pyth",
+				"Set Syntax: Python"
+			],
+			[
+				"htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"set mar",
+				"Set Syntax: Markdown"
+			],
+			[
+				"re",
+				"Package Control: Remove Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"pack",
+				"Preferences: Browse Packages"
+			],
+			[
+				"react",
+				"Snippet: React: this.refs."
+			],
+			[
+				"scs",
+				"Set Syntax: CSS"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"bash",
+				"Set Syntax: Shell Script (Bash)"
+			]
+		],
+		"width": 529.0
+	},
+	"console":
+	{
+		"height": 129.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/arkadiusz/Projects/teamodorro"
+	],
+	"file_history":
+	[
+		"/home/arkadiusz/Projects/Placetag/.gitignore",
+		"/home/arkadiusz/Projects/Placetag/src/js/components/app.jsx",
+		"/home/arkadiusz/.cache/.fr-03nNCC/META-INF/com/google/android/update-binary",
+		"/home/arkadiusz/.cache/.fr-ii0nFL/META-INF/com/google/android/updater-script",
+		"/home/arkadiusz/Downloads/podsumowanie-spotkania.md",
+		"/home/arkadiusz/Projects/sealious/sealious/tests/unit-tests/field-type.html.test.js",
+		"/home/arkadiusz/Projects/sealious/sealious/lib/base-chips/field_type.text.js",
+		"/home/arkadiusz/Projects/warsztaty-website/themes/very-simple/source/css/very-simple.scss",
+		"/home/arkadiusz/Projects/warsztaty-website/themes/very-simple/layout/post.jade",
+		"/home/arkadiusz/Projects/warsztaty-website/themes/very-simple/layout/base.jade",
+		"/home/arkadiusz/Projects/warsztaty-website/source/_posts/o-warsztatach.md",
+		"/home/arkadiusz/Projects/Placetag/src/css/style-app.css",
+		"/home/arkadiusz/Projects/Sealious/sealious/package.json",
+		"/home/arkadiusz/Projects/Sealious/hello-world/index.js",
+		"/home/arkadiusz/Projects/Sealious/sealious/tests/unit-tests/field-type.html.test.js",
+		"/home/arkadiusz/Projects/Sealious/sealious/lib/base-chips/field_type.html.js",
+		"/home/arkadiusz/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/arkadiusz/Projects/arkadiusz-wieczorek.github.io/index.html",
+		"/home/arkadiusz/Projects/arkadiusz-wieczorek.github.io/.git/MERGE_MSG",
+		"/home/arkadiusz/Projects/Sealious/sealious/node_modules/remove-attributes/removeAttributes.js",
+		"/home/arkadiusz/Projects/Sealious/sealious/docs/field-types-html.md",
+		"/home/arkadiusz/Projects/Sealious/sealious.github.io/index.html",
+		"/home/arkadiusz/Projects/Sealious/sealious/docs/field-types.md",
+		"/home/arkadiusz/Projects/Sealious/sealious/lib/base-chips/field_type.text.js",
+		"/home/arkadiusz/Projects/Sealious/sealious/tests/unit-tests/field-type.text.test.js",
+		"/home/arkadiusz/Projects/Sealious/sealious/tests/unit-tests/user-manager.test.js",
+		"/home/arkadiusz/Desktop/prezentacja/prezentacja-bezpieczenstwo/phishing-mail.html",
+		"/home/arkadiusz/Projects/Sealious/sealious/.git/MERGE_MSG",
+		"/home/arkadiusz/Projects/Sealious/sealious/lib/base-chips/resource_type.user.js",
+		"/home/arkadiusz/Projects/Sealious/test.js",
+		"/home/arkadiusz/Projects/Sealious/sealious/.git/COMMIT_EDITMSG",
+		"/home/arkadiusz/Desktop/prezentacja/internet",
+		"/home/arkadiusz/Desktop/prezentacja/prezentacja-bezpieczenstwo/bezp.md",
+		"/home/arkadiusz/Desktop/prezentacja/prepared-mbank/mBank serwis transakcyjny.html",
+		"/home/arkadiusz/Projects/Placetag/src/js/components/navigation.jsx",
+		"/home/arkadiusz/.config/sublime-text-3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
+		"/home/arkadiusz/Desktop/internet",
+		"/home/arkadiusz/Desktop/phishing-mail.html",
+		"/home/arkadiusz/Projects/Placetag/src/js/components/geolocation.jsx",
+		"/home/arkadiusz/Projects/Placetag/src/js/components/place-edit.jsx",
+		"/home/arkadiusz/Projects/Sealious/sealious/lib/core-services/user_manager.js",
+		"/home/arkadiusz/Projects/Sealious/sealious/lib/core-services/file-manager.js",
+		"/home/arkadiusz/Projects/Placetag/src/js/components/marker.jsx",
+		"/home/arkadiusz/Projects/Placetag/src/js/components/feedback-box.jsx",
+		"/home/arkadiusz/Projects/Sealious/sealious/lib/base-chips/_base-chips.js",
+		"/home/arkadiusz/Desktop/testing-strings",
+		"/home/arkadiusz/Projects/Sealious/sealious/tests/unit-tests/naugthy-strings",
+		"/home/arkadiusz/Projects/Sealious/sealious/tests/unit-tests/field-type.datetime.test.js",
+		"/media/arkadiusz/7479088D089D8471/backup-ThinkpadX200-2/Dokumenty/WMI-3/SOP/ćwiczenia/zolwik/skrypt.sh",
+		"/home/arkadiusz/Desktop/blns.txt",
+		"/media/arkadiusz/7479088D089D8471/backup-ThinkpadX200-2/Dokumenty/aero2.sh",
+		"/media/arkadiusz/7479088D089D8471/backup-ThinkpadX200-2/Dokumenty/WMI-4/GRK/CopyOfOBJ2XML.java",
+		"/media/arkadiusz/7479088D089D8471/backup-ThinkpadX200-2/Dokumenty/WMI-4/FIZ/Fizyka_Zadanie.txt",
+		"/media/arkadiusz/7479088D089D8471/backup-ThinkpadX200-2/Dokumenty/WMI-3/SOP/ćwiczenia/dariusz/plik2",
+		"/media/arkadiusz/7479088D089D8471/backup-ThinkpadX200-2/Dokumenty/WMI-3/SOP/ćwiczenia/dariusz/skrypt1",
+		"/media/arkadiusz/7479088D089D8471/backup-ThinkpadX200-2/Dokumenty/WMI-3/SOP/ćwiczenia/dariusz/plik1",
+		"/media/arkadiusz/7479088D089D8471/backup-ThinkpadX200-2/Dokumenty/WMI-3/SOP/ćwiczenia/zolwik/skrypt_z_opisem.sh",
+		"/media/arkadiusz/7479088D089D8471/backup-ThinkpadX200-2/Dokumenty/WMI-3/SOP/ćwiczenia/inne/kolo_macut.txt",
+		"/media/arkadiusz/7479088D089D8471/backup-ThinkpadX200-2/Dokumenty/WMI-3/PIS/ćwiczenia/organizer v0.2/index.php",
+		"/media/arkadiusz/7479088D089D8471/backup-ThinkpadX200-2/Dokumenty/WMI-3/PIS/ćwiczenia/php2/kuba.php",
+		"/media/arkadiusz/7479088D089D8471/backup-ThinkpadX200-2/Dokumenty/WMI-3/PIS/ćwiczenia/p3_test/json.php",
+		"/media/arkadiusz/7479088D089D8471/backup-ThinkpadX200-2/Dokumenty/WMI-2/NIF/Transform/src/transform/Transform.java",
+		"/media/arkadiusz/7479088D089D8471/backup-ThinkpadX200-2/Dokumenty/WMI-2/Drukarka/drukarka.sh",
+		"/media/arkadiusz/7479088D089D8471/backup-ThinkpadX200-2/Dokumenty/WMI-2/Drukarka/smieci/nify.cpp",
+		"/media/arkadiusz/7479088D089D8471/backup-ThinkpadX200-2/Dokumenty/WMI-2/POB/projekty/po-c2-dziedziczenie/main.cc",
+		"/media/arkadiusz/7479088D089D8471/backup-ThinkpadX200-2/Dokumenty/WMI-1/PPR/spis_tresci.txt",
+		"/media/arkadiusz/7479088D089D8471/backup-ThinkpadX200-2/Dokumenty/WMI-1/PPR/cwiczenia.txt",
+		"/media/arkadiusz/7479088D089D8471/backup-ThinkpadX200-2/Dokumenty/WMI-1/PPR/kopia_zapasowa.txt",
+		"/media/arkadiusz/7479088D089D8471/backup-ThinkpadX200-2/Dokumenty/WMI-1/PPR/koncept",
+		"/media/arkadiusz/7479088D089D8471/backup-ThinkpadX200-2/Dokumenty/WMI-1/ASD/Berlinska/rek.tex",
+		"/media/arkadiusz/7479088D089D8471/backup-ThinkpadX200-2/Dokumenty/WMI-1/Wstęp do algebry liniowej i geometrii/opracowanie egzaminu/przepisane.txt",
+		"/media/arkadiusz/7479088D089D8471/backup-ThinkpadX200-2/Dokumenty/WMI-1/Podstawy logiki i teorii mnogości/dGxUkCfR.txt",
+		"/home/arkadiusz/Projects/Placetag/src/js/components/places-view.jsx",
+		"/media/arkadiusz/7479088D089D8471/backup-ThinkpadX200-2/Dokumenty/WMI-1/Podstawy programowania/cwiczenia.txt",
+		"/home/arkadiusz/Projects/Placetag/src/js/components/map.jsx",
+		"/home/arkadiusz/Projects/Sealious/sealious/lib/base-chips/field_type.file.js",
+		"/home/arkadiusz/Documents/DSSD/engineering-work/make.sh",
+		"/home/arkadiusz/Documents/DSSD/engineering-work/document-title/placetag.latex",
+		"/home/arkadiusz/Documents/DSSD/engineering-work/document-title/monika.latex",
+		"/home/arkadiusz/Desktop/dokumentacja.md",
+		"/home/arkadiusz/Projects/Placetag/main.js",
+		"/home/arkadiusz/Projects/sealious.github.io/index.html",
+		"/home/arkadiusz/Documents/engineering-work/disc/Rozdział 3 - Projektowanie i tworzenie aplikacji mobilnych na platformę Android (Maciej Nowak)/Example/.gitignore",
+		"/home/arkadiusz/Documents/codes-for-engineering-work/chapter-5/src/js/components/routes.jsx",
+		"/home/arkadiusz/Documents/codes-for-engineering-work/chapter-5/src/js/components/main.jsx",
+		"/home/arkadiusz/Documents/codes-for-engineering-work/chapter-5/src/js/components/contact.jsx",
+		"/home/arkadiusz/Documents/codes-for-engineering-work/chapter-5/src/js/components/app.jsx",
+		"/home/arkadiusz/Documents/codes-for-engineering-work/chapter-5/src/js/components/about.jsx",
+		"/home/arkadiusz/Documents/codes-for-engineering-work/chapter-5/src/js/modules/model.js",
+		"/home/arkadiusz/Documents/codes-for-engineering-work/README.md",
+		"/home/arkadiusz/Documents/codes-for-engineering-work/chapter-2/CurrencyList/build.sh",
+		"/home/arkadiusz/Documents/codes-for-engineering-work/chapter-2-testing-react/lib/components/test.jsx",
+		"/home/arkadiusz/Documents/codes-for-engineering-work/chapter-2-testing-react/lib/components/CurrencyList.jsx",
+		"/home/arkadiusz/Documents/codes-for-engineering-work/chapter-2-testing-react/lib/components/ReusableCurrencyList.jsx",
+		"/home/arkadiusz/Documents/codes-for-engineering-work/chapter-2-testing-react/build.sh",
+		"/home/arkadiusz/Documents/codes-for-engineering-work/chapter-2/ReusableCurrencyList/lib/components/test.jsx",
+		"/home/arkadiusz/Documents/codes-for-engineering-work/chapter-2-testing-react/public/index.html",
+		"/home/arkadiusz/Documents/codes-for-engineering-work/chapter-2-testing-react/lib/components/loading_elements.jsx",
+		"/home/arkadiusz/Documents/codes-for-engineering-work/chapter-2-testing-react/lib/components/sth",
+		"/home/arkadiusz/Documents/codes-for-engineering-work/chapter-2-testing-react/lib/components/test_old.jsx",
+		"/home/arkadiusz/Projects/Placetag/captcha-secret.json",
+		"/home/arkadiusz/Projects/sealious-admin-panel/mockup/index.html",
+		"/home/arkadiusz/Projects/Placetag/src/js/components/registrationbox.jsx",
+		"/media/arkadiusz/01b258a3-1534-41ca-8235-84df56481bf3/home/arkadiusz/Desktop/1",
+		"/media/arkadiusz/01b258a3-1534-41ca-8235-84df56481bf3/home/arkadiusz/Desktop/bump",
+		"/home/arkadiusz/Projects/sealious-admin-panel/README.md",
+		"/home/arkadiusz/Projects/Placetag/src/js/modules/geocoder.js",
+		"/home/arkadiusz/Projects/Placetag/src/js/components/place-share.jsx",
+		"/home/arkadiusz/Projects/Placetag/src/js/fb.js",
+		"/home/arkadiusz/Projects/Placetag/src/img/share/twitter-icon-place.svg",
+		"/home/arkadiusz/Projects/Placetag/src/img/categories/svg/work.svg",
+		"/home/arkadiusz/Projects/Placetag/src/img/categories/svg/sport.svg",
+		"/home/arkadiusz/Projects/Placetag/src/img/categories/svg/shopping.svg",
+		"/home/arkadiusz/Projects/Placetag/src/img/add1.svg",
+		"/home/arkadiusz/Projects/Placetag/src/img/add2.svg",
+		"/home/arkadiusz/Projects/Placetag/src/img/add4.svg",
+		"/home/arkadiusz/Projects/Placetag/src/img/add5.svg",
+		"/home/arkadiusz/Projects/Placetag/src/img/burger.svg",
+		"/home/arkadiusz/Projects/Placetag/src/img/camera.svg",
+		"/home/arkadiusz/Projects/Placetag/src/img/cancel.svg",
+		"/home/arkadiusz/Projects/Placetag/src/img/category.svg",
+		"/home/arkadiusz/Projects/Placetag/src/img/compas.svg",
+		"/home/arkadiusz/Projects/Placetag/src/img/compas2.svg",
+		"/home/arkadiusz/Projects/Placetag/src/img/compas2_b.svg",
+		"/home/arkadiusz/Projects/Placetag/src/img/compas3.svg",
+		"/home/arkadiusz/Projects/Placetag/src/img/compas_b.svg",
+		"/home/arkadiusz/Projects/Placetag/src/img/cookie.svg",
+		"/home/arkadiusz/Projects/Placetag/src/img/edit.svg"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 106.0,
+		"where_history":
+		[
+			".",
+			"",
+			"src/js/*",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"input",
+			"ass",
+			"Things",
+			"qsofmxdgwo",
+			"nhi0fhac11",
+			"username",
+			"\"",
+			"tags",
+			"tag_content",
+			"attributes",
+			"tags",
+			"attributes",
+			"true",
+			"false",
+			"+",
+			"true",
+			"page.ti",
+			"meta",
+			"is_prop",
+			"utils",
+			"init_parser",
+			"params",
+			" === true",
+			"=== false",
+			"\"remove\"",
+			"\"keep\"",
+			"check_fragment",
+			"attributes_remove",
+			"attributes_keep",
+			"tags_remove",
+			"tags_keep",
+			"html_cleaned",
+			"tags_remove",
+			"tags_keep",
+			"element",
+			"tags_remove",
+			"tags_keep",
+			"header",
+			"(\"",
+			"tagname",
+			"jut",
+			"!==",
+			"parser_remover",
+			"_arra",
+			"parser",
+			"Parser",
+			"parser",
+			"cleaned",
+			"attributes_keep",
+			"tags_",
+			"var ",
+			"remove",
+			"kepp",
+			"tags",
+			"tags_keep",
+			"tags",
+			"remove",
+			"set",
+			"tags",
+			"name",
+			"str",
+			"result",
+			"test",
+			"string",
+			"encode",
+			"allowed_tags",
+			"tags",
+			"Attributes",
+			"attributes",
+			"Tags",
+			"tags",
+			"remove",
+			"'",
+			"\");\n",
+			"input_value",
+			"foreach",
+			"tags",
+			"p",
+			"describe",
+			"\"indent_with_tabs\":",
+			"\"indent_size\"",
+			"\"indent_with_tabs\"",
+			"\"indent_char\":",
+			"element",
+			"x",
+			"\n\n",
+			"\n\n\n",
+			"\n\n",
+			"\n\n\n",
+			"#	",
+			"tags",
+			"this",
+			"tags",
+			"return",
+			"default_params",
+			"allowedAttributes",
+			"allowedTags",
+			"(value_in_c",
+			"		",
+			".)",
+			") ",
+			"\\n",
+			"	",
+			"			",
+			"strip_html",
+			"Generator",
+			"Ge",
+			"<!-- author: Piotr Grobelny -->\nGene",
+			"Gene",
+			")",
+			"Listing",
+			"Podr",
+			"end",
+			"]",
+			"[",
+			"Kody",
+			"kod",
+			"Kod",
+			" [Kod",
+			"[",
+			"Więcej",
+			"##",
+			"więcej",
+			"to do",
+			"oraz",
+			"readAndStorePlaces",
+			"args",
+			"‘"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			" \">\";",
+			"function",
+			"##",
+			"komponentów",
+			"o",
+			" \n",
+			"```",
+			" \n",
+			"null",
+			"2500",
+			"komponentu",
+			"=\"\"></",
+			"count",
+			"a"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 140.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.markdown":
+	{
+		"height": 122.0
+	},
+	"output.sftp":
+	{
+		"height": 98.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 98.0
+	},
+	"pinned_build_system": "",
+	"project": "teamodorro.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"hello",
+				"hello-world/index.js"
+			],
+			[
+				"fieldhtml",
+				"sealious/lib/base-chips/field_type.html.js"
+			],
+			[
+				"fieldtext",
+				"sealious/lib/base-chips/field_type.text.js"
+			],
+			[
+				"index.js",
+				"hello-world/index.js"
+			],
+			[
+				"hellow-",
+				"hello-world/index.js"
+			],
+			[
+				"packe",
+				"sealious/package.json"
+			],
+			[
+				"route",
+				"src/js/components/routes.jsx"
+			],
+			[
+				"routes",
+				"src/js/components/routes.jsx"
+			],
+			[
+				"rout",
+				"src/js/components/routes.jsx"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Projects/sublime-projects/sealious.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 400.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 1051.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 239.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -174,3 +174,47 @@ body {
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
 }
+
+.input_duration {
+    padding-left: 0.5rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    font-size: 2rem;
+    color: #555;
+    margin: 0 0px 0px;
+    width: 100%;
+    background-color: #312828;
+    border: 0px solid #EEE;
+    transition: all 400ms;
+    font-family: 'Source Sans Pro Regular';
+    margin-bottom: 1rem;
+    margin-top: 0.2rem;
+}
+
+.button {
+    transition: all 400ms;
+    width: 100%;
+    background-color: #4CE575;
+    border: none;
+    padding: 1rem;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 1.25rem;
+    text-align: center;
+    transition: all 400ms;
+    cursor: pointer;
+}
+
+.button:focus {
+    outline: none !important;
+    /*box-shadow: 0 0 10px #4D7984;*/
+    transition: all 400ms;
+}
+
+.button:hover {
+    background: #40CB90;
+    box-shadow: 6px 6px 0px #30b27b inset, -6px -6px 0px #30b27b inset;
+    -moz-box-shadow: 6px 6px 0px #30b27b inset, -6px -6px 0px #30b27b inset;
+    -webkit-box-shadow: 6px 6px 0px #30b27b inset, -6px -6px 0px #30b27b inset;
+    transition: all 200ms;
+}

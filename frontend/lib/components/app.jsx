@@ -25,21 +25,31 @@ Example.App = React.createClass({
 	},
 	getInitialState: function() {
 		return {
-			session: {}
+			session: {},
+			work_duration: 0,
+			break_duration: 0
 		};
+	},
+	changeAttributeValue: function(attribute_name){
+		return function(event){
+			var obj = {};
+			obj[attribute_name] = event.target.value;
+			this.setState(obj);
+		}.bind(this);
 	},
 	refresh: function(){
 		var self = this;
 		var some_id;
 		Helper.getSession()
 		.then(function(current_session){
+				console.log('dd',current_session)
 				self.setState({
-					session: current_session
+					session: current_session,
+					work_duration: current_session.work_duration,
+					break_duration: current_session.break_duration
 				})
 			}
 		)
-		// console.log('save state')
-
 	},
 	add: function(){
 		var new_date = new Date()
@@ -49,18 +59,18 @@ Example.App = React.createClass({
 			"work_duration" : 25*60*1000,
 			"break_duration" : 5*60*1000,
 			"slug" : "sealcode",
-			"current_state" : "running"
+			"current_state" : "work"
 		}
 
 		Helper.addSession(data)
 	},
-				// {this.props.children}
-				//<button onClick={this.refresh}>Refresh</button>
-				//<button onClick={this.add}>Add</button>
 	render: function() {
 		return (
 			<div>
-				<Example.Menu/>
+				<Example.Menu 
+					changeAttributeValue={this.changeAttributeValue}
+					work_duration={this.state.work_duration}
+					break_duration={this.state.break_duration}/>
 				<Example.Timer session={this.state.session}/>
 			</div>
 		)

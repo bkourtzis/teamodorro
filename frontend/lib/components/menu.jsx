@@ -1,23 +1,7 @@
 var React = require('react');
 var Menu = require('react-burger-menu').stack;
-var Slider = require('react-rangeslider');
 
- 
 var Settings = React.createClass({
-	getInitialState: function(){
-	    return {
-	        work_duration: 25,
-	        break_duration: 5
-	    };
-	},
-	changeAttributeValue: function(attribute_name){
-		return function(event){
-			var obj = {};
-			obj[attribute_name] = event.target.value;
-			this.setState(obj);
-		}.bind(this);
-	},
-
 	saveDurations: function (e) {
 		e.preventDefault();
 
@@ -33,23 +17,30 @@ var Settings = React.createClass({
 
 	},
 	render: function() {
-		var durations = this.state;
+		var durations = {
+			work_duration: this.props.work_duration,
+			break_duration: this.props.break_duration
+		}
 		return (
 			<Menu>
-				<span>Work duration</span>
+				<span>Work duration (minutes)</span>
 
 				<input type="text"
-					onChange={this.changeAttributeValue("work_duration")} 
+					className="input_duration"
+					onChange={this.props.changeAttributeValue("work_duration")} 
 					value={durations.work_duration}
 					ref="work_input"/>
-				<span>Break duration</span>
+
+
+				<span>Break duration (minutes)</span>
 
 				<input type="text"
-					onChange={this.changeAttributeValue("break_duration")} 
+					className="input_duration"
+					onChange={this.props.changeAttributeValue("break_duration")} 
 					value={durations.break_duration}
 					ref="break_input"/>
 
-				<button onClick={this.saveDurations}>Save</button>
+				<button className="button" onClick={this.saveDurations}>Save</button>
 			</Menu>
 		);
 	}

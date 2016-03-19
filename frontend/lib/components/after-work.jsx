@@ -9,9 +9,9 @@ var AfterWork = React.createClass({
 		return (
 			<div>
 				<div className="flex-item sentence no-padding">
-					<span className="animated bounceInDown information">work time`s over!</span>
+					<span className="animated bounceInDown information">work time's over!</span>
 					<div className="slug">
-							{'teamodorro.io/'+this.props.slug}
+							{'teamodorro.sealcode.org/#/'+this.props.session.body.slug}
 						</div>
 				</div>
 				<div onClick={this.to_break} className="flex-item">

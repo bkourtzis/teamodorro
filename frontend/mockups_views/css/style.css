@@ -31,10 +31,14 @@ body {
 
 .break {
     background-color: hsl(136, 75%, 60%);
+    cursor: wait;
 }
 
 .after_break {
     background-color: hsl(76, 75%, 60%);
+    cursor: pointer;
+    font-size: 5rem !important;
+    line-height: 19rem !important;
 }
 
 .after_break:hover {
@@ -43,10 +47,14 @@ body {
 
 .work {
     background-color: hsl(9, 80%, 60%);
+    cursor: wait;
 }
 
 .after_work {
     background-color: hsl(16, 75%, 60%);
+    cursor: pointer;
+    font-size: 5rem !important;
+    line-height: 19rem !important;
 }
 
 .after_work:hover {
@@ -64,6 +72,10 @@ body {
 
 .sentence {
     font-size: 2rem;
+}
+
+.slug{
+    color: hsl(0, 10%, 45%);
 }
 
 .flex-container {
@@ -94,9 +106,12 @@ body {
     font-size: 2em;
     text-align: center;
     padding: 2rem;
-    cursor: pointer;
 }
 
+.no-padding{
+    padding: 0;
+    margin-bottom: 1rem;
+}
 .circle {
     transition: all 400ms;
     width: 20rem;
@@ -121,3 +136,93 @@ body {
 }
 
 
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+ 
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: hsl(0, 10%, 45%);
+}
+ 
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+ 
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+ 
+/* General sidebar styles */
+.bm-menu {
+  background: hsl(0, 10%, 15%);
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+ 
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+ 
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+ 
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.input_duration {
+    padding-left: 0.5rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    font-size: 2rem;
+    color: #555;
+    margin: 0 0px 0px;
+    width: 100%;
+    background-color: #312828;
+    border: 0px solid #EEE;
+    transition: all 400ms;
+    font-family: 'Source Sans Pro Regular';
+    margin-bottom: 1rem;
+    margin-top: 0.2rem;
+}
+
+.button {
+    transition: all 400ms;
+    width: 100%;
+    background-color: #312828;
+    border: none;
+    padding: 1rem;
+    color: rgb(184, 183, 173);
+    font-weight: bold;
+    font-size: 1.25rem;
+    text-align: center;
+    transition: all 400ms;
+    cursor: pointer;
+}
+
+.button:focus {
+    outline: none !important;
+    /*box-shadow: 0 0 10px #4D7984;*/
+    transition: all 400ms;
+}
+
+.button:hover {
+    transition: all 400ms;
+    background: hsl(54, 7%, 30%);
+}
+button{
+    cursor: pointer;
+}

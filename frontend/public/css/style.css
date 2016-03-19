@@ -31,10 +31,12 @@ body {
 
 .break {
     background-color: hsl(136, 75%, 60%);
+    cursor: wait;
 }
 
 .after_break {
     background-color: hsl(76, 75%, 60%);
+    cursor: pointer;
 }
 
 .after_break:hover {
@@ -43,10 +45,12 @@ body {
 
 .work {
     background-color: hsl(9, 80%, 60%);
+    cursor: wait;
 }
 
 .after_work {
     background-color: hsl(16, 75%, 60%);
+    cursor: pointer;
 }
 
 .after_work:hover {

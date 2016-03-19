@@ -1,0 +1,106 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-rendering: optimizelegibility;
+    font-smooth: auto;
+    -webkit-font-smoothing: auto;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+body {
+    font-family: 'Source Sans Pro Regular', 'Open Sans', 'Liberation Sans', 'Nimbus Sans L', 'Trebuchet MS', 'Arial';
+    font-weight: 300;
+    color: #555;
+    background-color: hsl(0, 10%, 25%);
+}
+
+.break {
+    background-color: hsl(96, 63%, 56%)
+}
+
+.work {
+    background-color: hsl(9, 80%, 63%);
+}
+
+.logo {
+    /*background-color: #333;*/
+    font-family: 'Lobster';
+    font-size: 6rem;
+}
+
+
+.sentence {
+    font-size: 2rem;
+}
+
+.flex-container {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+
+.row {
+    width: auto;
+    border-bottom: 2rem solid #333;
+    /*border: 1px solid blue;*/
+}
+
+.flex-item {
+    /*background-color: hsl(0, 100%, 63%);*/
+    padding: 2rem;
+    /*margin: 0;*/
+    color: #fff;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+}
+
+button {
+    transition: all 400ms;
+    background-color: #333;
+    padding: 1rem;
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none;
+    cursor: poiner;
+    border: none;
+}
+
+button:hover {
+    border: none;
+    background: red;
+    box-shadow: 0px 0px 1px #777;
+}
+
+.circle{
+	width: 22rem;
+	height: 22rem;
+	border-radius: 50%;
+	border-bottom: 2rem solid #333;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 8rem;
+}

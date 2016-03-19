@@ -25,7 +25,8 @@ var Settings = React.createClass({
 			<Menu>
 				<span>Work duration (minutes)</span>
 
-				<input type="text"
+				<input type="number"
+					min="1"
 					className="input_duration"
 					onChange={this.props.changeAttributeValue("work_duration")} 
 					value={durations.work_duration}
@@ -34,7 +35,8 @@ var Settings = React.createClass({
 
 				<span>Break duration (minutes)</span>
 
-				<input type="text"
+				<input type="number"
+					min="1"
 					className="input_duration"
 					onChange={this.props.changeAttributeValue("break_duration")} 
 					value={durations.break_duration}

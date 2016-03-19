@@ -81,6 +81,21 @@ var Helper = new function() {
 		var data = {};
 		data.last_changed_timestamp = this.generateCurrentTimestamp();
 		data.current_state = new_state;
+
+		return qwest.map('PATCH', resource, data)
+	}
+
+	this.changeDurationsForSession = function(id, break_duration, work_duration) {
+		var resource = url + '/' + id;
+		var data = {};
+
+		if (break_duration !== undefined || break_duration !== null) {
+			data.break_duration = break_duration;
+		}
+
+		if (work_duration !== undefined || work_duration !== null) {
+			data.work_duration = work_duration;
+		}
 		
 		return qwest.map('PATCH', resource, data)
 	}

@@ -4,6 +4,42 @@
 		"selected_items":
 		[
 			[
+				"wro",
+				"work_duration"
+			],
+			[
+				"se",
+				"session"
+			],
+			[
+				"React",
+				"ReactRouter"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"wor",
+				"work_duration"
+			],
+			[
+				"break",
+				"break_duration"
+			],
+			[
 				"fo",
 				"for	for (…) {…} (Improved Native For-Loop)"
 			],
@@ -324,10 +360,6 @@
 				"text-indent"
 			],
 			[
-				"pad",
-				"padding-left"
-			],
-			[
 				"ba",
 				"background-color"
 			],
@@ -366,10 +398,6 @@
 			[
 				"run",
 				"runSequence"
-			],
-			[
-				"font",
-				"font-family"
 			],
 			[
 				"regis",
@@ -486,39 +514,85 @@
 			[
 				"sh",
 				"shareViaTwitter"
-			],
-			[
-				"shareVi",
-				"shareViaGmail"
-			],
-			[
-				"sho",
-				"showCategoryIcon"
-			],
-			[
-				"shwo",
-				"showImage"
-			],
-			[
-				"show",
-				"showImage"
-			],
-			[
-				"lat",
-				"latitude"
-			],
-			[
-				"confirm",
-				"confirmButtonText"
-			],
-			[
-				"mod",
-				"model"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "frontend/public/css/style.css",
+			"settings":
+			{
+				"buffer_size": 7215,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "frontend/lib/components/menu.jsx",
+			"settings":
+			{
+				"buffer_size": 1195,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 9 files for \"console.log\"\n\n/home/arkadiusz/Projects/teamodorro/frontend/lib/components/app.jsx:\n   51  		Helper.updateSession(this.state.session.id, mode)\n   52  		.then(function(xml, new_session_data){\n   53: 			console.log(new_session_data)\n   54  			self.setState({\n   55  				session: new_session_data\n\n/home/arkadiusz/Projects/teamodorro/frontend/lib/components/menu.jsx:\n   12  		var break_duration = break_input.value;\n   13  \n   14: 		console.log('saved')\n   15: 		console.log('work_duration', work_duration)\n   16: 		console.log('break_duration', break_duration)\n   17  \n   18  	},\n   19  	render: function() {\n   20  		var session = this.props.session;\n   21: 		// console.log(session.body)\n   22  		// if (session.body !== undefined) {\n   23: 		// 	console.log(session.body.work_duration)\n   24  		// }\n   25  		return (\n\n/home/arkadiusz/Projects/teamodorro/frontend/lib/components/timer.jsx:\n   35  		}else{\n   36  			var lct = this.props.session.body.last_changed_timestamp;\n   37: 			console.log(this.props.timeOffset);\n   38  			var at = new Date().getTime() + this.props.timeOffset;\n   39  			var target_duration = this.getTargetDuration();\n   ..\n   50  \n   51  	callback: function(){\n   52: 		console.log('end')\n   53  	},\n   54  \n   ..\n  122  			}\n  123  		} catch(e){\n  124: 			console.log(e)\n  125  		}\n  126  	}\n\n9 matches across 3 files\n",
+			"settings":
+			{
+				"buffer_size": 1369,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "frontend/lib/components/timer.jsx",
+			"settings":
+			{
+				"buffer_size": 3236,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "frontend/lib/components/app.jsx",
+			"settings":
+			{
+				"buffer_size": 2397,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "frontend/lib/components/new-session.jsx",
+			"settings":
+			{
+				"buffer_size": 2100,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "frontend/public/index.html",
+			"settings":
+			{
+				"buffer_size": 536,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "frontend/lib/components/after-break.jsx",
+			"settings":
+			{
+				"buffer_size": 714,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "frontend/lib/helpers/helper.js",
+			"settings":
+			{
+				"buffer_size": 3029,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -591,10 +665,18 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 400.0,
-		"last_filter": "remo",
+		"height": 284.0,
+		"last_filter": "java",
 		"selected_items":
 		[
+			[
+				"java",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"js",
+				"Set Syntax: JSON"
+			],
 			[
 				"remo",
 				"Package Control: Remove Package"
@@ -602,10 +684,6 @@
 			[
 				"insta",
 				"Package Control: Install Package"
-			],
-			[
-				"js",
-				"Set Syntax: JavaScript"
 			],
 			[
 				"ins",
@@ -712,10 +790,6 @@
 				"Set Syntax: C++"
 			],
 			[
-				"java",
-				"Set Syntax: Java"
-			],
-			[
 				"loca",
 				"Snippet: JS - localStorage"
 			],
@@ -812,10 +886,39 @@
 	},
 	"expanded_folders":
 	[
-		"/home/arkadiusz/Projects/teamodorro"
+		"/home/arkadiusz/Projects/teamodorro",
+		"/home/arkadiusz/Projects/teamodorro/backend",
+		"/home/arkadiusz/Projects/teamodorro/backend/resource-types",
+		"/home/arkadiusz/Projects/teamodorro/frontend",
+		"/home/arkadiusz/Projects/teamodorro/frontend/lib",
+		"/home/arkadiusz/Projects/teamodorro/frontend/lib/components",
+		"/home/arkadiusz/Projects/teamodorro/frontend/lib/helpers",
+		"/home/arkadiusz/Projects/teamodorro/frontend/mockups_views",
+		"/home/arkadiusz/Projects/teamodorro/frontend/mockups_views/css",
+		"/home/arkadiusz/Projects/teamodorro/frontend/public",
+		"/home/arkadiusz/Projects/teamodorro/frontend/public/css",
+		"/home/arkadiusz/Projects/teamodorro/frontend/public/js"
 	],
 	"file_history":
 	[
+		"/home/arkadiusz/Projects/teamodorro/frontend/lib/components/timer.jsx",
+		"/home/arkadiusz/Projects/teamodorro/frontend/lib/components/after-work.jsx",
+		"/home/arkadiusz/Projects/teamodorro/frontend/lib/components/menu.jsx",
+		"/home/arkadiusz/Projects/teamodorro/frontend/lib/components/break.jsx",
+		"/home/arkadiusz/Projects/teamodorro/frontend/lib/components/work.jsx",
+		"/home/arkadiusz/Projects/teamodorro/frontend/lib/components/new-session.jsx",
+		"/home/arkadiusz/Projects/teamodorro/frontend/public/css/style.css",
+		"/home/arkadiusz/Projects/teamodorro/frontend/lib/helpers/helper.js",
+		"/home/arkadiusz/Projects/teamodorro/frontend/mockups_views/css/style.css",
+		"/home/arkadiusz/Projects/teamodorro/frontend/lib/components/container.jsx",
+		"/home/arkadiusz/Projects/teamodorro/frontend/public/index.html",
+		"/home/arkadiusz/Projects/teamodorro/frontend/lib/main.jsx",
+		"/home/arkadiusz/Projects/teamodorro/frontend/lib/components/app.jsx",
+		"/home/arkadiusz/Projects/teamodorro/package.json",
+		"/home/arkadiusz/Projects/teamodorro/frontend/mockups_views/new_session.html",
+		"/home/arkadiusz/Projects/teamodorro/frontend/lib/components/timer-container.jsx",
+		"/home/arkadiusz/Projects/teamodorro/frontend/lib/components/after-break.jsx",
+		"/home/arkadiusz/Projects/teamodorro/node_modules/create-hash/helpers.js",
 		"/home/arkadiusz/Projects/Placetag/.gitignore",
 		"/home/arkadiusz/Projects/Placetag/src/js/components/app.jsx",
 		"/home/arkadiusz/.cache/.fr-03nNCC/META-INF/com/google/android/update-binary",
@@ -925,29 +1028,11 @@
 		"/home/arkadiusz/Projects/Placetag/src/js/modules/geocoder.js",
 		"/home/arkadiusz/Projects/Placetag/src/js/components/place-share.jsx",
 		"/home/arkadiusz/Projects/Placetag/src/js/fb.js",
-		"/home/arkadiusz/Projects/Placetag/src/img/share/twitter-icon-place.svg",
-		"/home/arkadiusz/Projects/Placetag/src/img/categories/svg/work.svg",
-		"/home/arkadiusz/Projects/Placetag/src/img/categories/svg/sport.svg",
-		"/home/arkadiusz/Projects/Placetag/src/img/categories/svg/shopping.svg",
-		"/home/arkadiusz/Projects/Placetag/src/img/add1.svg",
-		"/home/arkadiusz/Projects/Placetag/src/img/add2.svg",
-		"/home/arkadiusz/Projects/Placetag/src/img/add4.svg",
-		"/home/arkadiusz/Projects/Placetag/src/img/add5.svg",
-		"/home/arkadiusz/Projects/Placetag/src/img/burger.svg",
-		"/home/arkadiusz/Projects/Placetag/src/img/camera.svg",
-		"/home/arkadiusz/Projects/Placetag/src/img/cancel.svg",
-		"/home/arkadiusz/Projects/Placetag/src/img/category.svg",
-		"/home/arkadiusz/Projects/Placetag/src/img/compas.svg",
-		"/home/arkadiusz/Projects/Placetag/src/img/compas2.svg",
-		"/home/arkadiusz/Projects/Placetag/src/img/compas2_b.svg",
-		"/home/arkadiusz/Projects/Placetag/src/img/compas3.svg",
-		"/home/arkadiusz/Projects/Placetag/src/img/compas_b.svg",
-		"/home/arkadiusz/Projects/Placetag/src/img/cookie.svg",
-		"/home/arkadiusz/Projects/Placetag/src/img/edit.svg"
+		"/home/arkadiusz/Projects/Placetag/src/img/share/twitter-icon-place.svg"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
@@ -965,6 +1050,47 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"break_duration",
+			"value",
+			"this.props.",
+			"session",
+			"console.log",
+			"session",
+			"slug",
+			"text",
+			"input_duration",
+			"input",
+			"9rem",
+			"8rem",
+			"padding",
+			"class",
+			"2rem",
+			"circle",
+			"this.props.params.slug",
+			"teamodorro",
+			"console",
+			"console.log",
+			"ion}/>",
+			"session",
+			"\n				",
+			"}/>\n",
+			"/>",
+			"updateSession",
+			"results",
+			"body",
+			"on.bo",
+			"body",
+			"y.body",
+			"slug",
+			"current_session",
+			"Container",
+			"item",
+			"slag",
+			"t_time",
+			"\n				",
+			"}/>\n",
+			"/>",
+			"dd",
 			"input",
 			"ass",
 			"Things",
@@ -1051,48 +1177,7 @@
 			"element",
 			"x",
 			"\n\n",
-			"\n\n\n",
-			"\n\n",
-			"\n\n\n",
-			"#	",
-			"tags",
-			"this",
-			"tags",
-			"return",
-			"default_params",
-			"allowedAttributes",
-			"allowedTags",
-			"(value_in_c",
-			"		",
-			".)",
-			") ",
-			"\\n",
-			"	",
-			"			",
-			"strip_html",
-			"Generator",
-			"Ge",
-			"<!-- author: Piotr Grobelny -->\nGene",
-			"Gene",
-			")",
-			"Listing",
-			"Podr",
-			"end",
-			"]",
-			"[",
-			"Kody",
-			"kod",
-			"Kod",
-			" [Kod",
-			"[",
-			"Więcej",
-			"##",
-			"więcej",
-			"to do",
-			"oraz",
-			"readAndStorePlaces",
-			"args",
-			"‘"
+			"\n\n\n"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1124,8 +1209,846 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "frontend/public/css/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7215,
+						"regions":
+						{
+						},
+						"selection":
+						[
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 5220.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "frontend/lib/components/menu.jsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1195,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								401,
+								401
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1369,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										223,
+										234
+									],
+									[
+										453,
+										464
+									],
+									[
+										483,
+										494
+									],
+									[
+										536,
+										547
+									],
+									[
+										685,
+										696
+									],
+									[
+										770,
+										781
+									],
+									[
+										1008,
+										1019
+									],
+									[
+										1220,
+										1231
+									],
+									[
+										1307,
+										1318
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								1016,
+								1016
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"default_dir": "/home/arkadiusz/Projects/teamodorro",
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ 	].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "frontend/lib/components/timer.jsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3236,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1235,
+								1235
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 225.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "frontend/lib/components/app.jsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2397,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1958,
+								1958
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "frontend/lib/components/new-session.jsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2100,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								778,
+								778
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 90.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "frontend/public/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 536,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								49,
+								49
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "frontend/lib/components/after-break.jsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 714,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								661,
+								661
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "frontend/lib/helpers/helper.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3029,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1892,
+								1892
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1125.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -1193,6 +2116,26 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"help",
+				"frontend/lib/helpers/helper.js"
+			],
+			[
+				"appjsx",
+				"frontend/lib/components/app.jsx"
+			],
+			[
+				"pack",
+				"package.json"
+			],
+			[
+				"helpe",
+				"frontend/lib/helpers/helper.js"
+			],
+			[
+				"hel",
+				"node_modules/create-hash/helpers.js"
+			],
 			[
 				"hello",
 				"hello-world/index.js"

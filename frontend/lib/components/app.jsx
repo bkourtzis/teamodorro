@@ -11,6 +11,7 @@ Example.AfterWork = require('./after-work.jsx');
 Example.Break = require('./break.jsx');
 Example.AfterBreak = require('./after-break.jsx');
 Example.Timer = require('./timer.jsx');
+Example.Menu = require('./menu.jsx');
 
 Example.App = React.createClass({
 				// <Router.RouteHandler/> → {this.props.children}
@@ -59,6 +60,7 @@ Example.App = React.createClass({
 	render: function() {
 		return (
 			<div>
+				<Example.Menu/>
 				<Example.Timer session={this.state.session}/>
 			</div>
 		)

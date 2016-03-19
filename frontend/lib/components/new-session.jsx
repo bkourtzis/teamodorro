@@ -18,8 +18,38 @@ var NewSession = React.createClass({
 	},
 	render: function() {
 		return (
-			<div className="NewSession">
-				NewSession
+			<div className="flex-container">
+			    <div className="row">
+			        <div className="flex-item">
+			            <div className="logo">
+			                Teamodorro
+			            </div>
+			        </div>
+			        <div className="flex-item no-padding-inputs">
+			            <input 
+			            	type="text" 
+			            	className="input" 
+			            	placeholder="Type your url">
+			            </input>
+			        </div>
+			        <div className="flex-item no-padding-inputs">
+			            <input 
+			            	type="number" 
+			            	min="1" 
+			            	className="input" 
+			            	placeholder="Work duration (minutes)">
+			            </input>
+			        </div>
+			        <div className="flex-item no-padding-inputs">
+			            <input 
+			            	type="number" 
+			            	min="1" 
+			            	className="input" 
+			            	placeholder="Break duration (minutes)">
+			            </input>
+			        </div>
+			        <button className="button">create session</button>
+			    </div>
 			</div>
 		);
 	}

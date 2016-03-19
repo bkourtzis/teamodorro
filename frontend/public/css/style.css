@@ -37,8 +37,8 @@ body {
 .after_break, .after_work{
 	background-color: hsl(76, 75%, 60%);
 	cursor: pointer;
-	font-size: 5rem !important;
-	line-height: 19rem !important;
+	font-size: 5rem;
+	line-height: 10rem;
 }
 
 .after_break:hover, .after_work:hover {
@@ -124,7 +124,7 @@ body {
 	border-bottom: 0.4rem solid hsl(0, 20%, 24%);
 	text-align: center;
 	vertical-align: middle;
-	line-height: 2rem;
+	line-height: 18rem;
 	font-size: 6rem;
 	display: inline-block;
 }
@@ -215,7 +215,7 @@ body {
 	background: rgba(0, 0, 0, 0.3);
 }
 
-.input_duration {
+.input{
 	padding-left: 0.5rem;
 	padding-top: 0.2rem;
 	padding-bottom: 0.2rem;
@@ -264,21 +264,125 @@ button {
 	font-size: 2.6rem;
 }
 
+.no-padding-inputs {
+	padding: 0;
+	margin: 0;
+}
+
+
+@media all and (max-width: 36rem) {
+	.input{
+		font-size: 1.6rem;
+		width: 90%;
+	}
+}
+
 @media all and (max-width: 32rem) {
+	.bm-burger-button{
+		display: none;
+	}
+
 	.logo{
 		font-size: 5rem;
 	}
+
+	.flex-item{
+		padding: 0rem;
+		/*padding-top: 2rem;*/
+	}
+
+	.press, .circle-block{
+		width: 16rem;
+		height: 16rem;
+		font-size: 4rem;
+		line-height: 14rem;
+	}
+
+	.circle-block{
+		line-height: 15rem;
+	}
+
+	.input{
+		font-size: 1.6rem;
+		width: 100%;
+	}
+
+
 }
+
+
+@media all and (max-width: 48rem) {
+
+	.slug{
+		font-size: 1.4rem;
+	}
+
+	.information{
+		font-size: 2.2rem;
+	}
+	.input{
+		font-size: 1.6rem;
+		margin-bottom: 0;
+	}
+
+	.button{
+		margin-top: 1.6rem;
+	}
+}
+
 
 @media all and (max-width: 30rem) {
 	.logo{
 		font-size: 4.5rem;
+	}
+
+	.slug{
+		font-size: 1.4rem;
+	}
+
+	.information{
+		font-size: 2.2rem;
+	}
+
+	.input{
+		font-size: 1.4rem;
+		margin-bottom: 0;
+	}
+
+	.button{
+		margin-top: 1.4rem;
 	}
 }
 
 @media all and (max-width: 28rem) {
 	.logo{
 		font-size: 4rem;
+	}
+
+	.slug{
+		font-size: 1.2rem;
+	}
+	.press, .circle-block{
+		width: 12rem;
+		height: 12rem;
+		font-size: 3rem;
+		line-height: 11rem;
+	}
+
+	.circle-block{
+		line-height: 11rem;
+	}
+
+	.information{
+		font-size: 2rem;
+	}
+	.input{
+		font-size: 1.4rem;
+		margin-bottom: 0;
+	}
+
+	.button{
+		margin-top: 1.2rem;
 	}
 }
 
@@ -290,6 +394,27 @@ button {
 	.information{
 		font-size: 2rem;
 	}
+
+	.press, .circle-block{
+		width: 10rem;
+		height: 10rem;
+		font-size: 2.5rem;
+		line-height: 8.5rem;
+	}
+
+	.circle-block{
+		line-height: 9rem;
+	}
+
+	.input{
+		font-size: 1.2rem;
+		margin-bottom: 0;
+	}
+
+	.button{
+		margin-top: 1.2rem;
+	}
+
 }
 
 @media all and (max-width: 24rem) {
@@ -300,4 +425,30 @@ button {
 	.information{
 		font-size: 1.6rem;
 	}
+
+	.slug{
+		font-size: 1rem;
+	}
+
+	.press, .circle-block{
+		width: 8rem;
+		height: 8rem;
+		font-size: 2rem;
+		line-height: 7rem;
+	}
+
+	.circle-block{
+		line-height: 7.5rem;
+	}
+
+	.input{
+		font-size: 1.2rem;
+		margin-bottom: 0;
+	}
+
+	.button{
+		margin-top: 1rem;
+	}
+
+
 }

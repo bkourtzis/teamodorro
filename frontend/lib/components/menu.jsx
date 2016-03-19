@@ -27,7 +27,7 @@ var Settings = React.createClass({
 
 				<input type="number"
 					min="1"
-					className="input_duration"
+					className="input"
 					onChange={this.props.changeAttributeValue("work_duration")} 
 					value={durations.work_duration}
 					ref="work_input"/>
@@ -37,7 +37,7 @@ var Settings = React.createClass({
 
 				<input type="number"
 					min="1"
-					className="input_duration"
+					className="input"
 					onChange={this.props.changeAttributeValue("break_duration")} 
 					value={durations.break_duration}
 					ref="break_input"/>

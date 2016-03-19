@@ -6,7 +6,7 @@ var session = new Sealious.ResourceType({
 		{name: "last_changed_timestamp", type: "datetime"},
 		{name: "work_duration", type: "int"},
 		{name: "break_duration", type: "int"},
-		{name: "slug", type: "text"},
+		{name: "slug", required: true, type: "unique_among", params: {resource_type: "session", field_name: "slug"}},
 		{name: "current_state", type: "session_state"}
 	],
 	access_strategy: "public"

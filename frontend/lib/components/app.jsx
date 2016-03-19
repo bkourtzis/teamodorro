@@ -40,8 +40,8 @@ Example.TimerContainer = React.createClass({
 	getInitialState: function() {
 		return {
 			session: {},
-			work_duration: 25*60*1000,
-			break_duration: 5*60*1000,
+			work_duration: 1500000,
+			break_duration: 300000,
 			time_offset: 0,
 			last_render: 0,
 		};

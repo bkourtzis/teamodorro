@@ -12,8 +12,8 @@ var Helper = new function() {
 
 	function get_default_data(){
 		return {
-			work_duration: 15*1000,
-			break_duration: 5*1000,
+			work_duration: 25*60*1000,
+			break_duration: 5*60*1000,
 			last_changed_timestamp: new Date().getTime() + offset,
 			current_state: "work"
 		}

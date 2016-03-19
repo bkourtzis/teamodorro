@@ -8,6 +8,8 @@ var sound = new Howler.Howl({
   urls: ['sounds/without_delay/' + pitch + '.ogg']
 })
 
+var first_run = true;
+
 module.exports = {
 	getInitialState: function() {
 	    return {
@@ -15,9 +17,14 @@ module.exports = {
 	    };
 	},
 	componentDidMount: function() {
-	  	sound.play();    
-	  	this.setState({
-	  		played_sound: true
-	  	})
+		console.log("did mount");
+		if(first_run){
+			first_run = false;
+		}else{
+		  	sound.play();    
+		  	this.setState({
+		  		played_sound: true
+		  	})			
+		}
 	}
 }

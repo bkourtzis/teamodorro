@@ -2,9 +2,13 @@ var React = require('react');
 var Break = React.createClass({
 	render: function() {
 		return (
-			<div className="Break">
-				Break
-				time: {this.props.time}
+			<div>
+				<div className="flex-item">
+					<div className="circle break">
+						{this.props.time}
+					</div>
+				</div>
+				<div className="flex-item sentence">Just relax...</div>
 			</div>
 		);
 	}

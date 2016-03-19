@@ -75,16 +75,28 @@ var Timer = React.createClass({
 			if (this.props.session.body) {
 							// {JSON.stringify(this.props.session)}
 				return (
-					<div className="content">
-						<div className="timer">
-							<span>Timer</span>
+					<div className="flex-container">
+						<div className="row">
+							<div className="flex-item">
+								<div className="logo">
+									Teamodorro
+								</div>
+							</div>
 							{this.showCurrentView()}
 						</div>
 					</div>
 				);			
 			} else {
 				return(
-					<div><span>loading</span></div>
+					<div className="flex-container">
+						<div className="row">
+							<div className="flex-item">
+								<div className="logo">
+									Teamodorro
+								</div>
+							</div>
+						</div>
+					</div>
 				)
 			}
 		} catch(e){

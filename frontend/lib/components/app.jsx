@@ -54,12 +54,12 @@ Example.App = React.createClass({
 		Helper.addSession(data)
 	},
 				// {this.props.children}
+				//<button onClick={this.refresh}>Refresh</button>
+				//<button onClick={this.add}>Add</button>
 	render: function() {
 		return (
-			<div className="app">
+			<div>
 				<Example.Timer session={this.state.session}/>
-				<button onClick={this.refresh}>Refresh</button>
-				<button onClick={this.add}>Add</button>
 			</div>
 		)
 	}

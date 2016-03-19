@@ -3,9 +3,13 @@ var React = require('react');
 var Work = React.createClass({
 	render: function() {
 		return (
-			<div className="Work">
-				Work
-				time {this.props.time}
+			<div>
+				<div className="flex-item">
+					<div className="circle work">
+						{this.props.time}
+					</div>
+				</div>
+				<div className="flex-item sentence">Focus on your task!</div>
 			</div>
 		);
 	}

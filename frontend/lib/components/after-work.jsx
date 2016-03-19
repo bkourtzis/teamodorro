@@ -8,9 +8,13 @@ var AfterWork = React.createClass({
 	},
 	render: function() {
 		return (
-			<div className="AfterWork">
-				AfterWork
-				<button onClick={this.to_break}>Go to break</button>
+			<div>
+				<div onClick={this.to_break} className="flex-item">
+					<div className="circle after_work">
+						break!
+					</div>
+				</div>
+				<div className="flex-item sentence">What now?</div>
 			</div>
 		);
 	}

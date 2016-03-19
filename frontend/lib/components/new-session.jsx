@@ -9,10 +9,10 @@ var NewSession = React.createClass({
 		var slug = ref_slug.value;
 
 		var ref_work_duration = this.refs.work_duration;
-		var work_duration = ref_work_duration.value;
+		var work_duration = ref_work_duration.value*60*1000;
 
 		var ref_break_duration = this.refs.break_duration;
-		var break_duration = ref_break_duration.value;
+		var break_duration = ref_break_duration.value*60*1000;
 
 		var data = {
 			"last_changed_timestamp" : Helper.generateCurrentTimestamp(),

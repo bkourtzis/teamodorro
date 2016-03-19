@@ -34,7 +34,6 @@ var Timer = React.createClass({
 			return 0;
 		}else{
 			var lct = this.props.session.body.last_changed_timestamp;
-			// console.log(this.props.timeOffset);
 			var at = new Date().getTime() + this.props.timeOffset;
 			var target_duration = this.getTargetDuration();
 			return Math.floor((target_duration - (at - lct))/1000);
@@ -48,37 +47,39 @@ var Timer = React.createClass({
 		// return currentTime = minutes + ":" + seconds;
 
 
-	callback: function(){
-		console.log('end')
-	},
-
 	showCurrentView: function(){
 		var current_mode = this.getMode()
 		var current_time = this.getTimeLeft()
+		var mins = ~~(current_time / 60);
+		var secs = current_time % 60;
+
+		if (mins.toString().length == 1) mins = "0"+mins;
+		if (secs.toString().length == 1) secs = "0"+secs;
+		var pretty_time = mins + ":" + secs;
 		var current_view;
 
 		switch(current_mode) {
 			case "break":
 				current_view = <Example.Break 
-					time={current_time} 
+					time={pretty_time} 
 					session={this.props.session} 
 					onChangeMode={this.props.onChangeMode}/>
 				break;
 			case "work":
 				current_view = <Example.Work 
-					time={current_time} 
+					time={pretty_time} 
 					session={this.props.session} 
 					onChangeMode={this.props.onChangeMode}/>
 				break;
 			case "after_break":
 				current_view = <Example.AfterBreak 
-					time={current_time} 
+					time={pretty_time} 
 					session={this.props.session} 
 					onChangeMode={this.props.onChangeMode}/>
 				break;
 			case "after_work":
 				current_view = <Example.AfterWork 
-					time={current_time} 
+					time={pretty_time} 
 					session={this.props.session} 
 					onChangeMode={this.props.onChangeMode}/>
 				break;

@@ -33,7 +33,7 @@ Example.TimerContainer = React.createClass({
 					self.setState({
 						last_render: new Date().getTime()
 					})
-				}, 250)
+				}, 40)
 			}, (new Date().getTime() + offset) % 1000 )
 		})
 	},

@@ -218,3 +218,7 @@ body {
     -webkit-box-shadow: 6px 6px 0px #30b27b inset, -6px -6px 0px #30b27b inset;
     transition: all 200ms;
 }
+
+button{
+    cursor: pointer;
+}

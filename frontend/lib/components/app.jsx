@@ -26,8 +26,8 @@ Example.App = React.createClass({
 	getInitialState: function() {
 		return {
 			session: {},
-			work_duration: 0,
-			break_duration: 0
+			work_duration: 25,
+			break_duration: 5
 		};
 	},
 	changeAttributeValue: function(attribute_name){
@@ -42,11 +42,8 @@ Example.App = React.createClass({
 		var some_id;
 		Helper.getSession()
 		.then(function(current_session){
-				console.log('dd',current_session)
 				self.setState({
-					session: current_session,
-					work_duration: current_session.work_duration,
-					break_duration: current_session.break_duration
+					session: current_session
 				})
 			}
 		)

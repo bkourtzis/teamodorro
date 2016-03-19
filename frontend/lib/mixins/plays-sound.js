@@ -5,7 +5,7 @@ var pitch = pitches[Math.floor(Math.random()*pitches.length)];
 
 
 var sound = new Howler.Howl({
-  urls: ['sounds/delayed/' + pitch + '.ogg']
+  urls: ['sounds/without_delay/' + pitch + '.ogg']
 })
 
 module.exports = {

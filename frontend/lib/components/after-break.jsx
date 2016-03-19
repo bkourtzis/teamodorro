@@ -20,8 +20,6 @@ var AfterBreak = React.createClass({
 						yes!
 					</div>
 				</div>
-
-
 			</div>
 		);
 	}

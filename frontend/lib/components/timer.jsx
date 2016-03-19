@@ -34,7 +34,7 @@ var Timer = React.createClass({
 			return 0;
 		}else{
 			var lct = this.props.session.body.last_changed_timestamp;
-			console.log(this.props.timeOffset);
+			// console.log(this.props.timeOffset);
 			var at = new Date().getTime() + this.props.timeOffset;
 			var target_duration = this.getTargetDuration();
 			return Math.floor((target_duration - (at - lct))/1000);

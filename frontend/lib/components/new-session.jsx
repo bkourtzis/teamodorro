@@ -3,18 +3,31 @@ var ReactRouter = require('react-router')
 var Helper = require('../helpers/helper.js')
 
 var NewSession = React.createClass({
+	mixins: [ReactRouter.Navigation],
 	add: function(){
-		var new_date = new Date()
+		var ref_slug = this.refs.slug;
+		var slug = ref_slug.value;
+
+		var ref_work_duration = this.refs.work_duration;
+		var work_duration = ref_work_duration.value;
+
+		var ref_break_duration = this.refs.break_duration;
+		var break_duration = ref_break_duration.value;
 
 		var data = {
-			"last_changed_timestamp" : new_date.getTime(),
-			"work_duration" : 25*60*1000,
-			"break_duration" : 5*60*1000,
-			"slug" : "sealcode",
+			"last_changed_timestamp" : Helper.generateCurrentTimestamp(),
+			"work_duration" : work_duration,
+			"break_duration" : break_duration,
+			"slug" : slug,
 			"current_state" : "work"
 		}
-
 		Helper.addSession(data)
+			.then(function(){
+				document.location.hash = "/"+slug;
+			})
+			.catch(function(){
+				document.location.hash = "/"+slug;
+			})
 	},
 	render: function() {
 		return (
@@ -29,7 +42,8 @@ var NewSession = React.createClass({
 			            <input 
 			            	type="text" 
 			            	className="input" 
-			            	placeholder="Type your url">
+			            	placeholder="Type your url"
+			            	ref="slug">
 			            </input>
 			        </div>
 			        <div className="flex-item no-padding-inputs">
@@ -37,7 +51,8 @@ var NewSession = React.createClass({
 			            	type="number" 
 			            	min="1" 
 			            	className="input" 
-			            	placeholder="Work duration (minutes)">
+			            	placeholder="Work duration (minutes)"
+			            	ref="work_duration">
 			            </input>
 			        </div>
 			        <div className="flex-item no-padding-inputs">
@@ -45,10 +60,11 @@ var NewSession = React.createClass({
 			            	type="number" 
 			            	min="1" 
 			            	className="input" 
-			            	placeholder="Break duration (minutes)">
+			            	placeholder="Break duration (minutes)"
+			            	ref="break_duration">
 			            </input>
 			        </div>
-			        <button className="button">create session</button>
+			        <button onClick={this.add} className="button">create session</button>
 			    </div>
 			</div>
 		);

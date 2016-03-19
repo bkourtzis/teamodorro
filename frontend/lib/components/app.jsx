@@ -86,10 +86,8 @@ Example.TimerContainer = React.createClass({
 
 		return (
 			<div>
-				<Example.Menu 
-					changeAttributeValue={this.changeAttributeValue}
-					work_duration={this.state.work_duration}
-					break_duration={this.state.break_duration}/>
+				<Example.Menu
+					session={this.state.session}/>
 				<Example.Timer 
 					session={this.state.session} 
 					onChangeMode={this.changeMode}
@@ -98,3 +96,8 @@ Example.TimerContainer = React.createClass({
 		)
 	}
 });
+
+				// <Example.Menu 
+				// 	changeAttributeValue={this.changeAttributeValue}
+				// 	work_duration={this.state.work_duration}
+				// 	break_duration={this.state.break_duration}/>

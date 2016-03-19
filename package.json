@@ -21,6 +21,7 @@
     "bluebird": "^3.3.4",
     "event-emitter": "^0.3.4",
     "forever": "^0.15.1",
+    "howler": "^1.1.29",
     "merge": "^1.2.0",
     "qwest": "^4.2.1",
     "react": "^0.14.7",

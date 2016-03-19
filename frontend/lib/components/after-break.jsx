@@ -2,6 +2,7 @@ var React = require('react');
 var Helper = require('../helpers/helper.js');
 
 var AfterBreak = React.createClass({
+	mixins: [require("../mixins/plays-sound.js")],
 	to_work: function(){
 		this.props.onChangeMode("work");
 	},

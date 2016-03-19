@@ -1,5 +1,5 @@
 var Howler = require("howler");
-var pitches = ["C4", "E4", "G4", "C5"];
+var pitches = ["G4"];
 
 var pitch = pitches[Math.floor(Math.random()*pitches.length)];
 

@@ -34,6 +34,14 @@ var Timer = React.createClass({
 			return Math.floor((target_duration - (at - lct))/1000);
 		}
 	},
+
+		// minutes = time.getMinutes();
+		// seconds = time.getSeconds();
+		// if (minutes.toString().length == 1) minutes = "0"+minutes;
+		// if (seconds.toString().length == 1) seconds = "0"+seconds;
+		// return currentTime = minutes + ":" + seconds;
+
+
 	callback: function(){
 		console.log('end')
 	},
@@ -42,8 +50,6 @@ var Timer = React.createClass({
 		var current_mode = this.getMode()
 		var current_time = this.getTimeLeft()
 		var current_view;
-		console.log(this.props.session.body.slug)
-
 
 		switch(current_mode) {
 			case "break":
@@ -65,8 +71,6 @@ var Timer = React.createClass({
 	},
 
 	render: function() {
-		// console.log(this.props.session)
-
 		try{
 			if (this.props.session.body) {
 				return (

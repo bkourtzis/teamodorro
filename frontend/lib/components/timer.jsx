@@ -19,7 +19,7 @@ var Timer = React.createClass({
 	},
 	getMode: function(){
 		var lct = this.props.session.body.last_changed_timestamp;
-		var at = new Date().getTime();
+		var at = new Date().getTime() + this.props.timeOffset;
 		var general_state = this.props.session.body.current_state;
 		var target_duration = this.getTargetDuration();
 		if(at-lct>=target_duration){

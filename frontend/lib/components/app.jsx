@@ -100,7 +100,7 @@ Example.TimerContainer = React.createClass({
 				<Example.Timer 
 					session={this.state.session} 
 					onChangeMode={this.changeMode}
-					timeOffest={this.state.time_offset}/>
+					timeOffset={this.state.time_offset}/>
 			</div>
 		)
 	}

@@ -1,13 +1,24 @@
 var qwest = require('qwest');
 var EventEmitter = require('event-emitter');
+var merge = require("merge");
 
 var Helper = new function() {
 
 	var ee = new EventEmitter();
 	this.on = ee.on.bind(ee);
 
+	function get_default_data(){
+		return {
+			work_duration: 15*1000,
+			break_duration: 5*1000,
+			last_changed_timestamp: new Date().getTime(),
+			current_state: "work"
+		}
+	}
+
+
 	// var url = 'http://vps202941.ovh.net:8081/api/v1/resources/session';
-	var url = 'http://arkadiusz-ThinkPad-T450s:8081/api/v1/resources/session';
+	var url = '/api/v1/resources/session';
 
 	this.request = function(method, url, data) {
 		return qwest.map(method, url, data)
@@ -39,15 +50,21 @@ var Helper = new function() {
 
 	this.getSessionByName = function(slug) {
 		return qwest.get(url, {filter: {slug: slug}})
-			.then(function(xhr, response) {
-				console.log('getSession')
-				return response;
-			})
+		.then(function(xhr, response) {
+			console.log("response", response)
+			if(response.length !== 0){
+				return response[0];
+			}else{
+				return Promise.reject(new Error("not_found"));
+			}
+		})
 	}
 
 
 	// add, update
-	this.addSession = function(data, id) {
+	this.addSession = function(data) {
+		data = merge(get_default_data(), data);
+		console.log("creating session:", data);
 		return qwest.post(url, data)
 			.then(function(xhr, response) {
 				// console.log('session added 	')
@@ -65,12 +82,6 @@ var Helper = new function() {
 		data.current_state = new_state;
 		
 		return qwest.map('PATCH', resource, data)
-			.then(function(xhr, response) {
-				console.log('updateSession')
-			})
-			.catch(function(e, xhr, response) {
-				console.log('error with updateSession')
-			});
 	}
 
 

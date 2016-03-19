@@ -31,6 +31,16 @@ Example.TimerContainer = React.createClass({
 			break_duration: 5
 		};
 	},
+	changeMode: function(mode){
+		var self = this;
+		Helper.updateSession(this.state.session.id, mode)
+		.then(function(xml, new_session_data){
+			console.log(new_session_data)
+			self.setState({
+				session: new_session_data
+			})
+		})
+	},
 	changeAttributeValue: function(attribute_name){
 		return function(event){
 			var obj = {};
@@ -42,24 +52,30 @@ Example.TimerContainer = React.createClass({
 		var self = this;
 		var some_id;
 		Helper.getSessionByName(this.props.params.slug)
-		.then(function(current_session){
+		.catch(function(err){
+			if(err.message === "not_found"){
+				try{
+					return Helper.addSession({slug: self.props.params.slug})
+				}catch(e){
+				}
+			}
+		})
+		.then(function(session_data){
 				self.setState({
-					session: current_session
+					session: session_data
 				})
 			}
 		)
 	},
 	render: function() {
-		console.log(this.props.params.slug)
 
 		return (
 			<div>
-
 				<Example.Menu 
 					changeAttributeValue={this.changeAttributeValue}
 					work_duration={this.state.work_duration}
 					break_duration={this.state.break_duration}/>
-				<Example.Timer session={this.state.session} />
+				<Example.Timer session={this.state.session} onChangeMode={this.changeMode}/>
 			</div>
 		)
 	}

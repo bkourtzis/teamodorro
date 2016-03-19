@@ -3,6 +3,11 @@ var Example = require('./app.jsx');
 var ReactCountdownClock = require('react-countdown-clock');
 
 var Timer = React.createClass({
+	getDefaultProps: function(){
+		return {
+			session: {},
+		}
+	},
 	getTargetDuration: function(){
 		var general_state = this.props.session.body.current_state;
 
@@ -53,16 +58,28 @@ var Timer = React.createClass({
 
 		switch(current_mode) {
 			case "break":
-				current_view = <Example.Break time={current_time} slug={this.props.session.body.slug}/>
+				current_view = <Example.Break 
+					time={current_time} 
+					session={this.props.session} 
+					onChangeMode={this.props.onChangeMode}/>
 				break;
 			case "work":
-				current_view = <Example.Work time={current_time} slug={this.props.session.body.slug}/>
+				current_view = <Example.Work 
+					time={current_time} 
+					session={this.props.session} 
+					onChangeMode={this.props.onChangeMode}/>
 				break;
 			case "after_break":
-				current_view = <Example.AfterBreak time={current_time} slug={this.props.session.body.slug}/>
+				current_view = <Example.AfterBreak 
+					time={current_time} 
+					session={this.props.session} 
+					onChangeMode={this.props.onChangeMode}/>
 				break;
 			case "after_work":
-				current_view = <Example.AfterWork time={current_time} slug={this.props.session.body.slug}/>
+				current_view = <Example.AfterWork 
+					time={current_time} 
+					session={this.props.session} 
+					onChangeMode={this.props.onChangeMode}/>
 				break;
 			default:
 				current_view = <div />;
@@ -71,7 +88,7 @@ var Timer = React.createClass({
 	},
 
 	render: function() {
-		
+
 		try{
 			if (this.props.session.body) {
 				return (

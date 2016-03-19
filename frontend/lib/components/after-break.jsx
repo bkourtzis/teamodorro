@@ -3,8 +3,7 @@ var Helper = require('../helpers/helper.js');
 
 var AfterBreak = React.createClass({
 	to_work: function(){
-		// id from params, not hardcode
-		Helper.updateSession('1ffyihxf1v', 'work');
+		this.props.onChangeMode("work");
 	},
 	render: function() {
 		return (

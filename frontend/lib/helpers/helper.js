@@ -88,7 +88,7 @@ var Helper = new function() {
 
 	this.generateCurrentTimestamp = function() {
 		var current_date = new Date();
-		return current_date.getTime();
+		return current_date.getTime() + offset;
 	}
 
 	this.getTimeOffset = function(){

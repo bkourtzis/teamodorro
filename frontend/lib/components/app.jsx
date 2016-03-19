@@ -28,7 +28,12 @@ Example.TimerContainer = React.createClass({
 				self.refresh();
 				setInterval(function(){
 					self.refresh();
-				}, 1000);				
+				}, 1000);
+				setInterval(function(){
+					self.setState({
+						last_render: new Date().getTime()
+					})
+				}, 250)
 			}, (new Date().getTime() + offset) % 1000 )
 		})
 	},
@@ -37,7 +42,8 @@ Example.TimerContainer = React.createClass({
 			session: {},
 			work_duration: 25,
 			break_duration: 5,
-			time_offset: 0
+			time_offset: 0,
+			last_render: 0,
 		};
 	},
 	changeMode: function(mode){

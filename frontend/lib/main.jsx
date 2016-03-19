@@ -16,8 +16,7 @@ ReactDOM.render(
 			<Route path=":slug" component={Example.TimerContainer}/>
 		</Route>
   	</Router>,
-document.getElementById('app')
+	document.getElementById('app')
 );
-
 
 // ReactDOM.render(<Example.App/>, document.getElementById('app'));

@@ -20,6 +20,7 @@ Example.TimerContainer = React.createClass({
 	componentDidMount: function() {
 		var self = this;
 		self.refresh();
+		self.refreshTimeOffset();
 		setInterval(function(){
 			self.refresh();
 		}, 1000)
@@ -28,7 +29,8 @@ Example.TimerContainer = React.createClass({
 		return {
 			session: {},
 			work_duration: 25,
-			break_duration: 5
+			break_duration: 5,
+			time_offset: 0
 		};
 	},
 	changeMode: function(mode){
@@ -47,6 +49,26 @@ Example.TimerContainer = React.createClass({
 			obj[attribute_name] = event.target.value;
 			this.setState(obj);
 		}.bind(this);
+	},
+	refreshTimeOffset: function(){
+		var self = this;
+		var offsets = [];
+		Helper.getTimeOffset()
+		.then(function(offset){
+			offsets.push(offset);
+			return Helper.getTimeOffset();
+		})
+		.then(function(offset){
+			offsets.push(offset);
+			return Helper.getTimeOffset();
+		})
+		.then(function(offset){
+			offsets.push(offset);
+			console.log("avg:", offsets.reduce(function(a, b){return a+b})/offsets.length);
+			self.setState({
+				time_offset: offsets.reduce(function(a, b){return a+b})/offsets.length
+			})
+		})
 	},
 	refresh: function(){
 		var self = this;
@@ -75,7 +97,10 @@ Example.TimerContainer = React.createClass({
 					changeAttributeValue={this.changeAttributeValue}
 					work_duration={this.state.work_duration}
 					break_duration={this.state.break_duration}/>
-				<Example.Timer session={this.state.session} onChangeMode={this.changeMode}/>
+				<Example.Timer 
+					session={this.state.session} 
+					onChangeMode={this.changeMode}
+					timeOffest={this.state.time_offset}/>
 			</div>
 		)
 	}

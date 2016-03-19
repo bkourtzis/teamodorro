@@ -16,9 +16,8 @@ var Helper = new function() {
 		}
 	}
 
-
-	// var url = 'http://vps202941.ovh.net:8081/api/v1/resources/session';
 	var url = '/api/v1/resources/session';
+
 
 	this.request = function(method, url, data) {
 		return qwest.map(method, url, data)
@@ -51,7 +50,6 @@ var Helper = new function() {
 	this.getSessionByName = function(slug) {
 		return qwest.get(url, {filter: {slug: slug}})
 		.then(function(xhr, response) {
-			console.log("response", response)
 			if(response.length !== 0){
 				return response[0];
 			}else{
@@ -88,6 +86,13 @@ var Helper = new function() {
 	this.generateCurrentTimestamp = function() {
 		var current_date = new Date();
 		return current_date.getTime();
+	}
+
+	this.getTimeOffset = function(){
+		return qwest.get("/time_offset", {client_timestamp: new Date().getTime()})
+		.then(function(xml, result){
+			return result.offset;
+		})
 	}
 };
 

@@ -263,3 +263,41 @@ button {
 .information{
 	font-size: 2.6rem;
 }
+
+@media all and (max-width: 32rem) {
+	.logo{
+		font-size: 5rem;
+	}
+}
+
+@media all and (max-width: 30rem) {
+	.logo{
+		font-size: 4.5rem;
+	}
+}
+
+@media all and (max-width: 28rem) {
+	.logo{
+		font-size: 4rem;
+	}
+}
+
+@media all and (max-width: 26rem) {
+	.logo{
+		font-size: 3.5rem;
+	}
+
+	.information{
+		font-size: 2rem;
+	}
+}
+
+@media all and (max-width: 24rem) {
+	.logo{
+		font-size: 3rem;
+	}
+
+	.information{
+		font-size: 1.6rem;
+	}
+}

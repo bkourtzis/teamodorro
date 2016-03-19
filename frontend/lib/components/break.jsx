@@ -6,7 +6,7 @@ var Break = React.createClass({
 				<div className="flex-item sentence no-padding">
 					<span className="animated bounceInDown information">break mode</span>
 					<div className="slug">
-						{'teamodorro.io/'+this.props.slug}
+						{'teamodorro.sealcode.org/#/'+this.props.session.body.slug}
 					</div>
 				</div>
 				<div className="flex-item">

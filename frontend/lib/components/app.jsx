@@ -19,11 +19,18 @@ Example.TimerContainer = React.createClass({
 	mixins: [Router.State, Router.Navigation],
 	componentDidMount: function() {
 		var self = this;
-		self.refresh();
-		self.refreshTimeOffset();
-		setInterval(function(){
-			self.refresh();
-		}, 1000)
+		Helper.cacheOffset()
+		.then(function(offset){
+			self.setState({
+				time_offset: offset
+			})
+			setTimeout(function(){
+				self.refresh();
+				setInterval(function(){
+					self.refresh();
+				}, 1000);				
+			}, (new Date().getTime() + offset) % 1000 )
+		})
 	},
 	getInitialState: function() {
 		return {
@@ -49,26 +56,6 @@ Example.TimerContainer = React.createClass({
 			obj[attribute_name] = event.target.value;
 			this.setState(obj);
 		}.bind(this);
-	},
-	refreshTimeOffset: function(){
-		var self = this;
-		var offsets = [];
-		Helper.getTimeOffset()
-		.then(function(offset){
-			offsets.push(offset);
-			return Helper.getTimeOffset();
-		})
-		.then(function(offset){
-			offsets.push(offset);
-			return Helper.getTimeOffset();
-		})
-		.then(function(offset){
-			offsets.push(offset);
-			console.log("avg:", offsets.reduce(function(a, b){return a+b})/offsets.length);
-			self.setState({
-				time_offset: offsets.reduce(function(a, b){return a+b})/offsets.length
-			})
-		})
 	},
 	refresh: function(){
 		var self = this;

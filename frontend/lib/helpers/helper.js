@@ -2,6 +2,9 @@ var qwest = require('qwest');
 var EventEmitter = require('event-emitter');
 var merge = require("merge");
 
+
+var offset = null;
+
 var Helper = new function() {
 
 	var ee = new EventEmitter();
@@ -11,7 +14,7 @@ var Helper = new function() {
 		return {
 			work_duration: 15*1000,
 			break_duration: 5*1000,
-			last_changed_timestamp: new Date().getTime(),
+			last_changed_timestamp: new Date().getTime() + offset,
 			current_state: "work"
 		}
 	}
@@ -92,6 +95,25 @@ var Helper = new function() {
 		return qwest.get("/time_offset", {client_timestamp: new Date().getTime()})
 		.then(function(xml, result){
 			return result.offset;
+		})
+	}
+
+	this.cacheOffset = function(){
+		var self = this;
+		var offsets = [];
+		return Helper.getTimeOffset()
+		.then(function(offset){
+			offsets.push(offset);
+			return Helper.getTimeOffset();
+		})
+		.then(function(offset){
+			offsets.push(offset);
+			return Helper.getTimeOffset();
+		})
+		.then(function(offset){
+			offsets.push(offset);
+			offset = offsets.reduce(function(a, b){return a+b})/offsets.length;
+			return offset;
 		})
 	}
 };

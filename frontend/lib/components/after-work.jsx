@@ -12,8 +12,8 @@ var AfterWork = React.createClass({
 				<div className="flex-item sentence no-padding">
 					<span className="animated bounceInDown information">work time's over!</span>
 					<div className="slug">
-							{'teamodorro.sealcode.org/#/'+this.props.session.body.slug}
-						</div>
+						{'teamodorro.sealcode.org/#/'+this.props.session.body.slug}
+					</div>
 				</div>
 				<div onClick={this.to_break} className="flex-item">
 					<div className="press after_work animated pulse">

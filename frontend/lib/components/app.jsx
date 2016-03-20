@@ -96,8 +96,3 @@ Example.TimerContainer = React.createClass({
 		)
 	}
 });
-
-				// <Example.Menu 
-				// 	changeAttributeValue={this.changeAttributeValue}
-				// 	work_duration={this.state.work_duration}
-				// 	break_duration={this.state.break_duration}/>

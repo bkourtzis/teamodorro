@@ -39,14 +39,6 @@ var Timer = React.createClass({
 			return Math.floor((target_duration - (at - lct))/1000);
 		}
 	},
-
-		// minutes = time.getMinutes();
-		// seconds = time.getSeconds();
-		// if (minutes.toString().length == 1) minutes = "0"+minutes;
-		// if (seconds.toString().length == 1) seconds = "0"+seconds;
-		// return currentTime = minutes + ":" + seconds;
-
-
 	showCurrentView: function(){
 		var current_mode = this.getMode()
 		var current_time = this.getTimeLeft()
